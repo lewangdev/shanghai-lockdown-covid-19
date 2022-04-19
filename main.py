@@ -1,3 +1,6 @@
+import os
+import json
+import hashlib
 import requests
 from bs4 import BeautifulSoup, SoupStrainer
 
@@ -10,15 +13,31 @@ def get_html(url):
     return r.text
 
 
-def write_html(html, filename):
+def write_file(content, filename):
     with open(filename, 'w') as f:
-        f.write(html)
+        f.write(content)
+
+
+def read_file(filename):
+    with open(filename, 'r') as f:
+        return f.read()
 
 
 if __name__ == '__main__':
-    pages = ['']
+
+    url_filename = 'archived_html/urls.json'
+
+    urls = {}
+    if os.path.exists(url_filename):
+        urls = json.loads(read_file(url_filename))
+
+    pages = ['', '_1', "_2", "_3", "_4", "_5"]
     for p in pages:
         url = 'https://wsjkw.sh.gov.cn/yqtb/index%s.html' % p
+
+        if url in set(urls.keys()):
+            continue
+
         html_doc = get_html(url)
         soup = BeautifulSoup(html_doc, 'html.parser')
 
@@ -30,6 +49,14 @@ if __name__ == '__main__':
             target_url = link_url
             if not target_url.startswith("http"):
                 target_url = 'https://wsjkw.sh.gov.cn' + link_url
-            link_html_doc = get_html(target_url)
-            write_html(link_html_doc, "archived_html/" +
-                       link_url.replace("/", "_"))
+
+            link_html_content = get_html(target_url)
+            filename = "%s.html" % hashlib.md5(
+                link_html_content.encode('utf8')).hexdigest()
+            urls[target_url] = {"text": link_text, "filename": filename}
+
+            write_file(link_html_content, "archived_html/" +
+                       filename)
+
+    write_file(json.dumps(urls, ensure_ascii=False, indent=4,
+               separators=(',', ':')), url_filename)
