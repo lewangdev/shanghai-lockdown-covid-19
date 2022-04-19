@@ -5,7 +5,7 @@ import requests
 from bs4 import BeautifulSoup, SoupStrainer
 
 
-def get_html(url):
+def get_html_content(url):
     headers = {
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36'
     }
@@ -31,31 +31,31 @@ if __name__ == '__main__':
     if os.path.exists(url_filename):
         urls = json.loads(read_file(url_filename))
 
-    pages = ['', '_1', "_2", "_3", "_4", "_5"]
+    pages = ['']
     for p in pages:
         url = 'https://wsjkw.sh.gov.cn/yqtb/index%s.html' % p
 
-        if url in set(urls.keys()):
-            continue
+        html_content = get_html_content(url)
+        soup = BeautifulSoup(html_content, 'html.parser')
 
-        html_doc = get_html(url)
-        soup = BeautifulSoup(html_doc, 'html.parser')
+        hyperlink_elements = soup.select('.list-date li')
+        for hyperlink_element in hyperlink_elements:
+            hyperlink_text = hyperlink_element.text
+            hyperlink_url = hyperlink_element.a['href']
 
-        link_elements = soup.select('.list-date li')
-        for link_element in link_elements:
-            link_text = link_element.text
-            link_url = link_element.a['href']
-
-            target_url = link_url
+            target_url = hyperlink_url
             if not target_url.startswith("http"):
-                target_url = 'https://wsjkw.sh.gov.cn' + link_url
+                target_url = 'https://wsjkw.sh.gov.cn' + hyperlink_url
 
-            link_html_content = get_html(target_url)
+            if target_url in set(urls.keys()):
+                continue
+
+            hyperlink_html_content = get_html_content(target_url)
             filename = "%s.html" % hashlib.md5(
-                link_html_content.encode('utf8')).hexdigest()
-            urls[target_url] = {"text": link_text, "filename": filename}
+                hyperlink_html_content.encode('utf8')).hexdigest()
+            urls[target_url] = {"text": hyperlink_text, "filename": filename}
 
-            write_file(link_html_content, "archived_html/" +
+            write_file(hyperlink_html_content, "archived_html/" +
                        filename)
 
     write_file(json.dumps(urls, ensure_ascii=False, indent=4,
