@@ -27,7 +27,7 @@ if __name__ == '__main__':
 
     url_filename = 'archived_html/urls.json'
 
-    urls = {}
+    urls = []
     if os.path.exists(url_filename):
         urls = json.loads(read_file(url_filename))
 
@@ -47,13 +47,14 @@ if __name__ == '__main__':
             if not target_url.startswith("http"):
                 target_url = 'https://wsjkw.sh.gov.cn' + hyperlink_url
 
-            if target_url in set(urls.keys()):
+            if target_url in set(map(lambda x: x['url'], urls)):
                 continue
 
             hyperlink_html_content = get_html_content(target_url)
             filename = "%s.html" % hashlib.md5(
                 hyperlink_html_content.encode('utf8')).hexdigest()
-            urls[target_url] = {"text": hyperlink_text, "filename": filename}
+            urls.insert(
+                0, {"url": target_url, "text": hyperlink_text, "filename": filename})
 
             write_file(hyperlink_html_content, "archived_html/" +
                        filename)
