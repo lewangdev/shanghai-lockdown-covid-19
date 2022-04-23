@@ -1,16 +1,14 @@
-2022 4 21 1931 15698
 {
-    "date":"2022-4-21",
-    "confirmed":1931,
-    "asymptomatic":15698,
-    "total":17629,
-    "districts":[
-        {
-            "district_name":"浦东新区",
-            "confirmed":409,
-            "asymptomatic":4246,
-            "total":4655,
-            "addresses":[
+    "date": "2022-4-21",
+    "confirmed": 1931,
+    "asymptomatic": 15698,
+    "total": 17629,
+    "districts": [{
+            "district_name": "浦东新区",
+            "confirmed": 409,
+            "asymptomatic": 4246,
+            "total": 4655,
+            "addresses": [
                 "八灶村顾家宅",
                 "八灶村乔家宅",
                 "白杨路1065弄",
@@ -1064,11 +1062,11 @@
             ]
         },
         {
-            "district_name":"黄浦区",
-            "confirmed":192,
-            "asymptomatic":1560,
-            "total":1752,
-            "addresses":[
+            "district_name": "黄浦区",
+            "confirmed": 192,
+            "asymptomatic": 1560,
+            "total": 1752,
+            "addresses": [
                 "安澜路13弄",
                 "白渡路258弄",
                 "半淞园路628号",
@@ -1730,11 +1728,11 @@
             ]
         },
         {
-            "district_name":"静安区",
-            "confirmed":150,
-            "asymptomatic":1914,
-            "total":2064,
-            "addresses":[
+            "district_name": "静安区",
+            "confirmed": 150,
+            "asymptomatic": 1914,
+            "total": 2064,
+            "addresses": [
                 "安远路389弄",
                 "安远路515号",
                 "安远路777弄",
@@ -2254,11 +2252,11 @@
             ]
         },
         {
-            "district_name":"徐汇区",
-            "confirmed":347,
-            "asymptomatic":1019,
-            "total":1366,
-            "addresses":[
+            "district_name": "徐汇区",
+            "confirmed": 347,
+            "asymptomatic": 1019,
+            "total": 1366,
+            "addresses": [
                 "安福路53弄",
                 "百花街350号",
                 "百色路133弄",
@@ -2621,11 +2619,11 @@
             ]
         },
         {
-            "district_name":"长宁区",
-            "confirmed":85,
-            "asymptomatic":411,
-            "total":496,
-            "addresses":[
+            "district_name": "长宁区",
+            "confirmed": 85,
+            "asymptomatic": 411,
+            "total": 496,
+            "addresses": [
                 "安化路279号",
                 "安化路331弄26支弄",
                 "安龙路698弄",
@@ -2786,11 +2784,11 @@
             ]
         },
         {
-            "district_name":"普陀区",
-            "confirmed":94,
-            "asymptomatic":395,
-            "total":489,
-            "addresses":[
+            "district_name": "普陀区",
+            "confirmed": 94,
+            "asymptomatic": 395,
+            "total": 489,
+            "addresses": [
                 "安远路188弄,",
                 "白兰路169弄,",
                 "白丽路701弄,",
@@ -2925,11 +2923,11 @@
             ]
         },
         {
-            "district_name":"虹口区",
-            "confirmed":103,
-            "asymptomatic":782,
-            "total":885,
-            "addresses":[
+            "district_name": "虹口区",
+            "confirmed": 103,
+            "asymptomatic": 782,
+            "total": 885,
+            "addresses": [
                 "安汾路780弄",
                 "巴林小区50弄",
                 "宝安支路85号",
@@ -3276,11 +3274,11 @@
             ]
         },
         {
-            "district_name":"杨浦区",
-            "confirmed":54,
-            "asymptomatic":489,
-            "total":543,
-            "addresses":[
+            "district_name": "杨浦区",
+            "confirmed": 54,
+            "asymptomatic": 489,
+            "total": 543,
+            "addresses": [
                 "爱国二村",
                 "爱国路301弄",
                 "爱国路94号",
@@ -3484,11 +3482,11 @@
             ]
         },
         {
-            "district_name":"宝山区",
-            "confirmed":136,
-            "asymptomatic":842,
-            "total":978,
-            "addresses":[
+            "district_name": "宝山区",
+            "confirmed": 136,
+            "asymptomatic": 842,
+            "total": 978,
+            "addresses": [
                 "爱辉路28弄",
                 "爱辉路328弄",
                 "班溪路105号",
@@ -3800,11 +3798,11 @@
             ]
         },
         {
-            "district_name":"闵行区",
-            "confirmed":153,
-            "asymptomatic":2410,
-            "total":2563,
-            "addresses":[
+            "district_name": "闵行区",
+            "confirmed": 153,
+            "asymptomatic": 2410,
+            "total": 2563,
+            "addresses": [
                 "爱博二村",
                 "爱博三村",
                 "爱博四村",
@@ -4319,11 +4317,11 @@
             ]
         },
         {
-            "district_name":"嘉定区",
-            "confirmed":80,
-            "asymptomatic":696,
-            "total":776,
-            "addresses":[
+            "district_name": "嘉定区",
+            "confirmed": 80,
+            "asymptomatic": 696,
+            "total": 776,
+            "addresses": [
                 "11号线城北路站D地块工地",
                 "爱特路276号",
                 "爱特路333弄",
@@ -4501,20 +4499,20 @@
             ]
         },
         {
-            "district_name":"金山区",
-            "confirmed":8,
-            "asymptomatic":22,
-            "total":30,
-            "addresses":[
+            "district_name": "金山区",
+            "confirmed": 8,
+            "asymptomatic": 22,
+            "total": 30,
+            "addresses": [
                 "通业路89号"
             ]
         },
         {
-            "district_name":"松江区",
-            "confirmed":22,
-            "asymptomatic":471,
-            "total":493,
-            "addresses":[
+            "district_name": "松江区",
+            "confirmed": 22,
+            "asymptomatic": 471,
+            "total": 493,
+            "addresses": [
                 "伴亭路855弄",
                 "宝胜路18号",
                 "宝益路255号",
@@ -4667,11 +4665,11 @@
             ]
         },
         {
-            "district_name":"青浦区",
-            "confirmed":60,
-            "asymptomatic":325,
-            "total":385,
-            "addresses":[
+            "district_name": "青浦区",
+            "confirmed": 60,
+            "asymptomatic": 325,
+            "total": 385,
+            "addresses": [
                 "白马塘村",
                 "北淀浦河路894号",
                 "北青公路4558号",
@@ -4769,18 +4767,18 @@
             ]
         },
         {
-            "district_name":"奉贤区",
-            "confirmed":14,
-            "asymptomatic":20,
-            "total":34,
-            "addresses":[]
+            "district_name": "奉贤区",
+            "confirmed": 14,
+            "asymptomatic": 20,
+            "total": 34,
+            "addresses": []
         },
         {
-            "district_name":"崇明区",
-            "confirmed":24,
-            "asymptomatic":96,
-            "total":120,
-            "addresses":[]
+            "district_name": "崇明区",
+            "confirmed": 24,
+            "asymptomatic": 96,
+            "total": 120,
+            "addresses": []
         }
     ]
 }

@@ -35,7 +35,6 @@ if __name__ == "__main__":
         if not total_found and total_match is not None:
             (_, _, y, m, d, _, confirmed, asymptomatic) = total_match.groups()
             total_found = True
-            print(y, m, d, confirmed, asymptomatic)
             total = dict(
                 date=f"{y}-{m}-{d}", confirmed=int(confirmed), asymptomatic=int(asymptomatic),
                 total=int(confirmed)+int(asymptomatic)
