@@ -18,14 +18,33 @@ def parse_to_lines(filename: str):
     return lines
 
 
-if __name__ == "__main__":
-    filename = "archived_html/22584a06e898fce7cda176c651650497.html"
-    lines = parse_to_lines(filename)
+def extract_cases(line: str):
+    regex1 = "(\\d+)年(\\d+)月(\\d+)日，(.*?)新增(\\d+)例本土(.*?)确诊病例(.*?)新增(\\d+)例本土无症状感染者.*?"
+    m1 = re.match(regex1, line, re.IGNORECASE)
+    if m1 is not None:
+        (_, _, _, _, confirmed, _, _, asymptomatic) = m1.groups()
+        return (int(confirmed), int(asymptomatic))
 
+    regex2 = "(\\d+)年(\\d+)月(\\d+)日，(.*?)新增(\\d+)例本土无症状感染者.*?"
+    m2 = re.match(regex2, line, re.IGNORECASE)
+    if m2 is not None:
+        (_, _, _, _, asymptomatic) = m2.groups()
+        return (0, int(asymptomatic))
+
+    regex3 = "(\\d+)年(\\d+)月(\\d+)日，(.*?)新增本土(.*?)确诊病例(\\d+)例(.*?)新增本土无症状感染者(\\d+)例.*?"
+    m3 = re.match(regex3, line, re.IGNORECASE)
+    if m3 is not None:
+        (_, _, _, _, _, confirmed, _, asymptomatic) = m3.groups()
+        return (int(confirmed), int(asymptomatic))
+
+    return 0, 0
+
+
+def get_json_data(lines):
     total = None
     districts = []
     regex_total = "市卫健委(.*?)通报：(.*?)(\\d+)年(\\d+)月(\\d+)日(.*?)新增本土新冠肺炎确诊病例(\\d+)例和无症状感染者(\\d+)例"
-    regex_district = "(\\d+)年(\\d+)月(\\d+)日，(.*?)新增(\\d+)例本土确诊病例，新增(\\d+)例本土无症状感染者.*?"
+    regex_district = "(\\d+)年(\\d+)月(\\d+)日，(.*?)新增.*?"
     pattern_total = re.compile(regex_total, re.IGNORECASE)
     pattern_district = re.compile(regex_district, re.IGNORECASE)
     district_matched = None
@@ -43,8 +62,8 @@ if __name__ == "__main__":
 
         district_match = pattern_district.match(line)
         if district_match is not None:
-            (_, _, _, district_name,
-             confirmed, asymptomatic) = district_match.groups()
+            (_, _, _, district_name) = district_match.groups()
+            (confirmed, asymptomatic) = extract_cases(line)
             district_matched = dict(
                 district_name=district_name, confirmed=int(confirmed),
                 asymptomatic=int(asymptomatic), total=int(confirmed)+int(asymptomatic), addresses=[])
@@ -54,6 +73,7 @@ if __name__ == "__main__":
                 continue
 
             if line.find("资料：") != -1 or line.find("编辑：") != -1 or line.find("消毒措施") != -1:
+                district_matched = None
                 continue
 
             address = line.strip().replace("、", "").replace(
@@ -62,6 +82,13 @@ if __name__ == "__main__":
                 district_matched['addresses'].append(address)
 
     total['districts'] = districts
+    return total
+
+
+if __name__ == "__main__":
+    filename = "archived_html/22584a06e898fce7cda176c651650497.html"
+    lines = parse_to_lines(filename)
+    total = get_json_data(lines)
     ret = json.dumps(total, ensure_ascii=False, indent=4,
                      separators=(',', ':'))
     print(ret)

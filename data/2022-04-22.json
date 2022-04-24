@@ -1,14 +1,15 @@
 {
-    "date": "2022-4-22",
-    "confirmed": 2736,
-    "asymptomatic": 20634,
-    "total": 23370,
-    "districts": [{
-            "district_name": "浦东新区",
-            "confirmed": 704,
-            "asymptomatic": 7257,
-            "total": 7961,
-            "addresses": [
+    "date":"2022-4-22",
+    "confirmed":2736,
+    "asymptomatic":20634,
+    "total":23370,
+    "districts":[
+        {
+            "district_name":"浦东新区",
+            "confirmed":704,
+            "asymptomatic":7257,
+            "total":7961,
+            "addresses":[
                 "白萱路99弄",
                 "白杨路1065弄",
                 "白杨路360弄",
@@ -1530,16 +1531,15 @@
                 "紫叶路65弄",
                 "紫叶路81弄",
                 "邹平路191号工地生活区",
-                "祖冲之路2201弄",
-                "黄浦区"
+                "祖冲之路2201弄"
             ]
         },
         {
-            "district_name": "黄浦区",
-            "confirmed": 435,
-            "asymptomatic": 2408,
-            "total": 2843,
-            "addresses": [
+            "district_name":"黄浦区",
+            "confirmed":435,
+            "asymptomatic":2408,
+            "total":2843,
+            "addresses":[
                 "安澜路13弄",
                 "安澜路55号",
                 "白渡路188弄",
@@ -2469,16 +2469,15 @@
                 "庄家街49号",
                 "庄家街79弄",
                 "庄家街82弄",
-                "庄家街100弄",
-                "静安区"
+                "庄家街100弄"
             ]
         },
         {
-            "district_name": "静安区",
-            "confirmed": 76,
-            "asymptomatic": 710,
-            "total": 786,
-            "addresses": [
+            "district_name":"静安区",
+            "confirmed":76,
+            "asymptomatic":710,
+            "total":786,
+            "addresses":[
                 "宝昌路632弄",
                 "宝昌路751弄",
                 "宝山路499弄",
@@ -2716,16 +2715,15 @@
                 "中兴路678号",
                 "中兴路700号",
                 "中兴路702号",
-                "中兴路800号",
-                "徐汇区"
+                "中兴路800号"
             ]
         },
         {
-            "district_name": "徐汇区",
-            "confirmed": 123,
-            "asymptomatic": 1152,
-            "total": 1275,
-            "addresses": [
+            "district_name":"徐汇区",
+            "confirmed":123,
+            "asymptomatic":1152,
+            "total":1275,
+            "addresses":[
                 "安福路53弄",
                 "百花街345弄",
                 "百色路133弄",
@@ -3046,16 +3044,15 @@
                 "中山南二路937弄",
                 "中山南二路945弄",
                 "中山南二路999弄",
-                "中山西路1788弄",
-                "长宁区"
+                "中山西路1788弄"
             ]
         },
         {
-            "district_name": "长宁区",
-            "confirmed": 164,
-            "asymptomatic": 549,
-            "total": 713,
-            "addresses": [
+            "district_name":"长宁区",
+            "confirmed":164,
+            "asymptomatic":549,
+            "total":713,
+            "addresses":[
                 "安化路111弄",
                 "安化路331弄",
                 "安化路470弄",
@@ -3240,16 +3237,15 @@
                 "遵义路575弄",
                 "遵义路780弄",
                 "遵义路800弄（住宅）",
-                "遵义南路8号",
-                "普陀区"
+                "遵义南路8号"
             ]
         },
         {
-            "district_name": "普陀区",
-            "confirmed": 71,
-            "asymptomatic": 452,
-            "total": 523,
-            "addresses": [
+            "district_name":"普陀区",
+            "confirmed":71,
+            "asymptomatic":452,
+            "total":523,
+            "addresses":[
                 "安远路188弄,",
                 "安远路230弄,",
                 "北石路114号,",
@@ -3361,16 +3357,15 @@
                 "志丹路260弄,",
                 "志丹路400弄,",
                 "中山北路1482号,",
-                "子洲路58弄",
-                "虹口区"
+                "子洲路58弄"
             ]
         },
         {
-            "district_name": "虹口区",
-            "confirmed": 428,
-            "asymptomatic": 569,
-            "total": 997,
-            "addresses": [
+            "district_name":"虹口区",
+            "confirmed":428,
+            "asymptomatic":569,
+            "total":997,
+            "addresses":[
                 "安国路223弄",
                 "安国路28弄",
                 "安国路3号",
@@ -3760,9 +3755,15 @@
                 "周家嘴路607号",
                 "周家嘴路86弄",
                 "周家嘴路981弄",
-                "株洲路258弄",
-                "杨浦区",
-                "2022年4月22日杨浦区新增88例本土新冠肺炎确诊病例新增1268例本土无症状感染者分别居住于：",
+                "株洲路258弄"
+            ]
+        },
+        {
+            "district_name":"杨浦区",
+            "confirmed":88,
+            "asymptomatic":1268,
+            "total":1356,
+            "addresses":[
                 "爱国二村",
                 "爱国路13号",
                 "爱国路301弄",
@@ -4124,16 +4125,15 @@
                 "周家嘴路3158弄",
                 "周家嘴路3609号",
                 "周家嘴路4440号",
-                "周家嘴路4500号",
-                "宝山区"
+                "周家嘴路4500号"
             ]
         },
         {
-            "district_name": "宝山区",
-            "confirmed": 179,
-            "asymptomatic": 1854,
-            "total": 2033,
-            "addresses": [
+            "district_name":"宝山区",
+            "confirmed":179,
+            "asymptomatic":1854,
+            "total":2033,
+            "addresses":[
                 "爱辉路701号",
                 "白沙园路333弄",
                 "宝安公路7弄",
@@ -4689,16 +4689,15 @@
                 "张墅村",
                 "长春村",
                 "长征新村",
-                "朱家弄村",
-                "闵行区"
+                "朱家弄村"
             ]
         },
         {
-            "district_name": "闵行区",
-            "confirmed": 208,
-            "asymptomatic": 1097,
-            "total": 1305,
-            "addresses": [
+            "district_name":"闵行区",
+            "confirmed":208,
+            "asymptomatic":1097,
+            "total":1305,
+            "addresses":[
                 "爱博二村",
                 "爱博三村",
                 "爱博四村",
@@ -5026,16 +5025,15 @@
                 "颛兴路245弄",
                 "颛兴路345弄",
                 "颛兴路358弄",
-                "颛兴路666弄",
-                "嘉定区"
+                "颛兴路666弄"
             ]
         },
         {
-            "district_name": "嘉定区",
-            "confirmed": 76,
-            "asymptomatic": 424,
-            "total": 500,
-            "addresses": [
+            "district_name":"嘉定区",
+            "confirmed":76,
+            "asymptomatic":424,
+            "total":500,
+            "addresses":[
                 "阿克苏路66弄",
                 "爱特路185弄",
                 "爱特路333弄",
@@ -5191,12 +5189,24 @@
                 "增建村",
                 "招贤路767号",
                 "赵厅村",
-                "震川路60号",
-                "金山区",
-                "2022年4月22日金山区新增26例本土无症状感染者其中部分病例之前已落实管控其涉及的居住地无需采取封控措施其余居住于：",
-                "恒信居民区康妙东区",
-                "松江区",
-                "2022年4月22日松江区新增本土新冠肺炎确诊病例120例新增本土无症状感染者2448例分别居住于：",
+                "震川路60号"
+            ]
+        },
+        {
+            "district_name":"金山区",
+            "confirmed":0,
+            "asymptomatic":26,
+            "total":26,
+            "addresses":[
+                "恒信居民区康妙东区"
+            ]
+        },
+        {
+            "district_name":"松江区",
+            "confirmed":120,
+            "asymptomatic":2448,
+            "total":2568,
+            "addresses":[
                 "伴亭路258弄",
                 "北松公路4688号",
                 "北松公路4999弄",
@@ -5315,16 +5325,15 @@
                 "影维路60弄",
                 "泽悦路326弄",
                 "泽悦路88弄",
-                "张庄村",
-                "青浦区"
+                "张庄村"
             ]
         },
         {
-            "district_name": "青浦区",
-            "confirmed": 44,
-            "asymptomatic": 315,
-            "total": 359,
-            "addresses": [
+            "district_name":"青浦区",
+            "confirmed":44,
+            "asymptomatic":315,
+            "total":359,
+            "addresses":[
                 "宝庆街117号",
                 "北青公路6972弄",
                 "北青公路8865号",
@@ -5409,12 +5418,24 @@
                 "诸光路498号",
                 "诸光路高光路",
                 "诸光路光联一路",
-                "诸陆西路755弄",
-                "奉贤区",
-                "2022年4月22日奉贤区新增6例本土新冠肺炎确诊病例新增2例本土无症状感染者上述人员均在隔离管控中发现其涉及的场所已落实终末消毒等措施",
-                "崇明区",
-                "2022年4月22日崇明区新增14例新冠肺炎本土确诊病例新增103例本土无症状感染者这些病例之前均已落实管控其涉及的场所已采取封控措施并已落实终末消毒等措施"
+                "诸陆西路755弄"
             ]
+        },
+        {
+            "district_name":"奉贤区",
+            "confirmed":6,
+            "asymptomatic":2,
+            "total":8,
+            "addresses":[
+                "崇明区"
+            ]
+        },
+        {
+            "district_name":"崇明区",
+            "confirmed":0,
+            "asymptomatic":103,
+            "total":103,
+            "addresses":[]
         }
     ]
 }
