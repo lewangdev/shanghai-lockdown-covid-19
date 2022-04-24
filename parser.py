@@ -3,7 +3,7 @@ import json
 from bs4 import BeautifulSoup
 
 
-SHANGHAI_DISTRICTS = {"浦东新区", "徐汇区", "长宁区", "静安区", "普陀区", "闸北区",
+SHANGHAI_DISTRICTS = {"浦东新区", "徐汇区", "长宁区", "静安区", "普陀区", "闸北区", "黄浦区",
                       "虹口区", "杨浦区", "闵行区", "宝山区", "嘉定区", "松江区", "青浦区", "奉贤区", "金山区", "崇明区"}
 
 
@@ -79,7 +79,7 @@ def get_json_data(lines):
             if district_matched is None:
                 continue
 
-            if line.find("资料：") != -1 or line.find("编辑：") != -1 or line.find("消毒措施") != -1:
+            if line.find("资料：") != -1 or line.find("编辑：") != -1 or line.find("消毒措施") != -1 or line.find("消毒等措施") != -1:
                 district_matched = None
                 continue
 
