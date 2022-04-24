@@ -3,6 +3,10 @@ import json
 from bs4 import BeautifulSoup
 
 
+SHANGHAI_DISTRICTS = {"浦东新区", "徐汇区", "长宁区", "静安区", "普陀区", "闸北区",
+                      "虹口区", "杨浦区", "闵行区", "宝山区", "嘉定区", "松江区", "青浦区", "奉贤区", "金山区", "崇明区"}
+
+
 def parse_to_lines(filename: str):
     with open(filename, 'r') as f:
         html_content = f.read()
@@ -55,7 +59,7 @@ def get_json_data(lines):
             (_, _, y, m, d, _, confirmed, asymptomatic) = total_match.groups()
             total_found = True
             total = dict(
-                date=f"{y}-{m}-{d}", confirmed=int(confirmed), asymptomatic=int(asymptomatic),
+                date=f"{y}-{m:0>2}-{d}", confirmed=int(confirmed), asymptomatic=int(asymptomatic),
                 total=int(confirmed)+int(asymptomatic)
             )
             continue
@@ -78,7 +82,7 @@ def get_json_data(lines):
 
             address = line.strip().replace("、", "").replace(
                 "，", "").replace("。", "")
-            if address != "":
+            if address != "" and address not in SHANGHAI_DISTRICTS:
                 district_matched['addresses'].append(address)
 
     total['districts'] = districts
@@ -86,9 +90,29 @@ def get_json_data(lines):
 
 
 if __name__ == "__main__":
-    filename = "archived_html/22584a06e898fce7cda176c651650497.html"
-    lines = parse_to_lines(filename)
-    total = get_json_data(lines)
-    ret = json.dumps(total, ensure_ascii=False, indent=4,
-                     separators=(',', ':'))
-    print(ret)
+    # filename = "archived_html/22584a06e898fce7cda176c651650497.html"
+    # lines = parse_to_lines(filename)
+    # total = get_json_data(lines)
+    # ret = json.dumps(total, ensure_ascii=False, indent=4,
+    #                 separators=(',', ':'))
+    # print(ret)
+    filename = "archived_html/urls.json"
+    with open(filename, 'r') as f:
+        urls = json.load(f)
+
+    regex = "(\\d+)月(\\d+)日（(.*?)时）本市各区确诊病例、无症状感染者居住地信息.*?"
+    pattern = re.compile(regex, re.IGNORECASE)
+    for url in urls:
+        text = url['text']
+        m = pattern.match(text)
+        if m is None:
+            continue
+
+        filename = "archived_html/" + url['filename']
+        lines = parse_to_lines(filename)
+        total = get_json_data(lines)
+        ret = json.dumps(total, ensure_ascii=False, indent=4,
+                         separators=(',', ':'))
+
+        with open(f"data/{total['date']}.json", 'w') as f:
+            f.write(ret)

@@ -1,5 +1,5 @@
 {
-    "date":"2022-4-22",
+    "date":"2022-04-22",
     "confirmed":2736,
     "asymptomatic":20634,
     "total":23370,
@@ -5426,9 +5426,7 @@
             "confirmed":6,
             "asymptomatic":2,
             "total":8,
-            "addresses":[
-                "崇明区"
-            ]
+            "addresses":[]
         },
         {
             "district_name":"崇明区",

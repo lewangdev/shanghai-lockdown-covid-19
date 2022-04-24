@@ -4,6 +4,8 @@ import hashlib
 import requests
 from bs4 import BeautifulSoup
 
+from parser import parse_to_lines, get_json_data
+
 
 def get_html_content(url):
     headers = {
