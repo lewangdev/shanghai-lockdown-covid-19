@@ -1429,9 +1429,9 @@
         },
         {
             "district_name":"普陀区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":13,
+            "asymptomatic":232,
+            "total":245,
             "addresses":[
                 "中山北路1243弄",
                 "桃浦路221弄",
@@ -3880,9 +3880,9 @@
         },
         {
             "district_name":"普陀区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":13,
+            "asymptomatic":232,
+            "total":245,
             "addresses":[
                 "中山北路1243弄",
                 "桃浦路221弄",

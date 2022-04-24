@@ -6,9 +6,9 @@
     "districts":[
         {
             "district_name":"浦东新区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":8,
+            "asymptomatic":127,
+            "total":135,
             "addresses":[
                 "利津路1313弄",
                 "首善街555弄",
@@ -292,9 +292,9 @@
         },
         {
             "district_name":"嘉定区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":2,
+            "asymptomatic":79,
+            "total":81,
             "addresses":[
                 "嘉定镇街道李园二村",
                 "崇教路267号对面工地宿舍",

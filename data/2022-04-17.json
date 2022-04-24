@@ -5167,9 +5167,9 @@
         },
         {
             "district_name":"金山区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":5,
+            "asymptomatic":19,
+            "total":24,
             "addresses":[]
         },
         {

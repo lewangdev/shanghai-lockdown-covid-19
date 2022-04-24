@@ -6,9 +6,9 @@
     "districts":[
         {
             "district_name":"浦东新区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":1,
+            "asymptomatic":219,
+            "total":220,
             "addresses":[
                 "三三公路5020弄",
                 "芳华路933弄",
@@ -153,9 +153,9 @@
         },
         {
             "district_name":"黄浦区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":2,
+            "asymptomatic":40,
+            "total":42,
             "addresses":[
                 "茂名南路9弄",
                 "黄陂南路783号",
@@ -216,9 +216,9 @@
         },
         {
             "district_name":"徐汇区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":1,
+            "asymptomatic":45,
+            "total":46,
             "addresses":[
                 "梅陇路565弄",
                 "东安路230弄",
@@ -243,9 +243,9 @@
         },
         {
             "district_name":"长宁区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":1,
+            "asymptomatic":12,
+            "total":13,
             "addresses":[
                 "法华镇路457弄",
                 "安化路508号",

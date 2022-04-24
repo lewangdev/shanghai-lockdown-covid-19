@@ -6,9 +6,9 @@
     "districts":[
         {
             "district_name":"浦东新区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":169,
+            "asymptomatic":2014,
+            "total":2183,
             "addresses":[
                 "瑞意路399弄",
                 "崂山路645弄",
@@ -761,9 +761,9 @@
         },
         {
             "district_name":"黄浦区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":6,
+            "asymptomatic":104,
+            "total":110,
             "addresses":[
                 "永年路149弄,",
                 "静修路79弄,",
@@ -951,9 +951,9 @@
         },
         {
             "district_name":"徐汇区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":34,
+            "asymptomatic":1066,
+            "total":1100,
             "addresses":[
                 "长桥二村",
                 "汇成二村",
@@ -1481,9 +1481,9 @@
         },
         {
             "district_name":"宝山区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":33,
+            "asymptomatic":330,
+            "total":363,
             "addresses":[
                 "竹韵路58弄",
                 "朱家弄村",
@@ -1840,9 +1840,9 @@
         },
         {
             "district_name":"嘉定区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":9,
+            "asymptomatic":246,
+            "total":255,
             "addresses":[
                 "春海路400弄",
                 "春荣路799弄",
@@ -1950,9 +1950,9 @@
         },
         {
             "district_name":"金山区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":2,
+            "asymptomatic":24,
+            "total":26,
             "addresses":[
                 "金南街801弄",
                 "九工路2005弄",

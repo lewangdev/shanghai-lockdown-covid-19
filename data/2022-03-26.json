@@ -6,9 +6,9 @@
     "districts":[
         {
             "district_name":"浦东新区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":1,
+            "asymptomatic":322,
+            "total":323,
             "addresses":[
                 "周南村",
                 "南祝路258弄",
@@ -254,9 +254,9 @@
         },
         {
             "district_name":"徐汇区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":5,
+            "asymptomatic":326,
+            "total":331,
             "addresses":[
                 "桂林路303弄",
                 "汇成二村",
@@ -384,9 +384,9 @@
         },
         {
             "district_name":"普陀区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":1,
+            "asymptomatic":68,
+            "total":69,
             "addresses":[
                 "梅川路1333弄",
                 "桃浦七村",
@@ -501,9 +501,9 @@
         },
         {
             "district_name":"宝山区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":6,
+            "asymptomatic":147,
+            "total":153,
             "addresses":[
                 "白杨村",
                 "宝安公路2145号",

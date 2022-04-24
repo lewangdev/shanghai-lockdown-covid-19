@@ -1511,9 +1511,9 @@
         },
         {
             "district_name":"长宁区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":7,
+            "asymptomatic":93,
+            "total":100,
             "addresses":[
                 "东诸安浜路158弄",
                 "利西路277号",
@@ -1589,9 +1589,9 @@
         },
         {
             "district_name":"普陀区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":39,
+            "asymptomatic":349,
+            "total":388,
             "addresses":[
                 "梅川新村",
                 "大渡河路1550弄",
@@ -1785,9 +1785,9 @@
         },
         {
             "district_name":"虹口区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":30,
+            "asymptomatic":312,
+            "total":342,
             "addresses":[
                 "祥德路15弄",
                 "水电路294号",
@@ -1990,9 +1990,9 @@
         },
         {
             "district_name":"杨浦区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":19,
+            "asymptomatic":255,
+            "total":274,
             "addresses":[
                 "鞍山八村",
                 "鞍山三村",
@@ -2849,9 +2849,9 @@
         },
         {
             "district_name":"松江区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":8,
+            "asymptomatic":559,
+            "total":567,
             "addresses":[
                 "庵前小区",
                 "奥林匹克花园",
@@ -3016,9 +3016,9 @@
         },
         {
             "district_name":"青浦区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":3,
+            "asymptomatic":228,
+            "total":231,
             "addresses":[
                 "北青公路3408弄",
                 "陈东村",
@@ -3221,9 +3221,9 @@
         },
         {
             "district_name":"崇明区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":3,
+            "asymptomatic":110,
+            "total":113,
             "addresses":[
                 "丰福路699弄",
                 "先进村",

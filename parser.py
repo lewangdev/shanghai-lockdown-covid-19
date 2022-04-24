@@ -44,6 +44,12 @@ def extract_cases(line: str):
         (_, _, _, _, _, confirmed, _, asymptomatic) = m3.groups()
         return (int(confirmed), int(asymptomatic))
 
+    regex4 = "(\\d+)年(\\d+)月(\\d+)日，(.*?)新增(\\d+)例本土(.*?)确诊病例(、|和)(\\d+)例本土无症状感染者.*?"
+    m4 = re.match(regex4, line, re.IGNORECASE)
+    if m4 is not None:
+        (_, _, _, _, confirmed, _, _, asymptomatic) = m4.groups()
+        return (int(confirmed), int(asymptomatic))
+
     return 0, 0
 
 
@@ -121,10 +127,10 @@ def generate_data_from_urls(urls_filename: str):
 
 
 if __name__ == "__main__":
-    # filename = "archived_html/d52951915aaf51521046ddf7e70776f5.html"
+    # filename = "archived_html/67563db6c3ddc415a9d99abbe806efba.html"
     # total = get_json_data_from_file(filename)
     # ret = json.dumps(total, ensure_ascii=False,
-    #                  indent=4, separators=(',', ':'))
+    #                 indent = 4, separators = (',', ':'))
     # print(ret)
 
     urls_filename = "archived_html/urls.json"

@@ -494,9 +494,9 @@
         },
         {
             "district_name":"嘉定区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":1,
+            "asymptomatic":68,
+            "total":69,
             "addresses":[
                 "曹安公路1948号",
                 "宝钱公路3488弄",

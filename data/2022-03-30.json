@@ -6,9 +6,9 @@
     "districts":[
         {
             "district_name":"浦东新区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":249,
+            "asymptomatic":1958,
+            "total":2207,
             "addresses":[
                 "牌楼村",
                 "三彩路52弄",
@@ -843,9 +843,9 @@
         },
         {
             "district_name":"黄浦区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":16,
+            "asymptomatic":345,
+            "total":361,
             "addresses":[
                 "西仓桥街112弄",
                 "打浦路339弄",
@@ -1107,9 +1107,9 @@
         },
         {
             "district_name":"徐汇区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":15,
+            "asymptomatic":389,
+            "total":404,
             "addresses":[
                 "凯旋南路31号",
                 "龙漕路51弄",
@@ -1238,9 +1238,9 @@
         },
         {
             "district_name":"长宁区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":8,
+            "asymptomatic":120,
+            "total":128,
             "addresses":[
                 "新泾一村",
                 "昭化路518弄",
@@ -1516,9 +1516,9 @@
         },
         {
             "district_name":"宝山区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":1,
+            "asymptomatic":503,
+            "total":504,
             "addresses":[
                 "丰翔路1415号",
                 "祁北路85弄",
@@ -1929,9 +1929,9 @@
         },
         {
             "district_name":"嘉定区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":9,
+            "asymptomatic":149,
+            "total":158,
             "addresses":[
                 "榆中路68弄",
                 "华江支路677弄",

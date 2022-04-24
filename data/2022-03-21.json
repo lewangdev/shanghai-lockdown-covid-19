@@ -6,9 +6,9 @@
     "districts":[
         {
             "district_name":"浦东新区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":6,
+            "asymptomatic":163,
+            "total":169,
             "addresses":[
                 "军港公路朝丰新村",
                 "妙境路124弄",
@@ -192,9 +192,9 @@
         },
         {
             "district_name":"徐汇区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":4,
+            "asymptomatic":126,
+            "total":130,
             "addresses":[
                 "罗秀路887号",
                 "龙华西路591弄",
@@ -413,9 +413,9 @@
         },
         {
             "district_name":"金山区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":1,
+            "asymptomatic":15,
+            "total":16,
             "addresses":[
                 "分别居住于：",
                 "金光村",

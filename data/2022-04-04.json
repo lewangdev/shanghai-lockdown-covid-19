@@ -2930,9 +2930,9 @@
         },
         {
             "district_name":"宝山区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":1,
+            "asymptomatic":264,
+            "total":265,
             "addresses":[
                 "白杨村",
                 "班溪路55弄",
@@ -3256,9 +3256,9 @@
         },
         {
             "district_name":"嘉定区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":4,
+            "asymptomatic":233,
+            "total":237,
             "addresses":[
                 "安新路968号",
                 "白银路399号",

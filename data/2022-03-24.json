@@ -577,9 +577,9 @@
         },
         {
             "district_name":"嘉定区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":1,
+            "asymptomatic":129,
+            "total":130,
             "addresses":[
                 "沪宜公路3066弄",
                 "安边路1558号",
