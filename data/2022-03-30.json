@@ -1310,9 +1310,9 @@
         },
         {
             "district_name":"普陀区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":6,
+            "asymptomatic":140,
+            "total":146,
             "addresses":[
                 "兰田小区",
                 "枣阳路465弄,",

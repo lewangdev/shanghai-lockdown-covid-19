@@ -1254,9 +1254,9 @@
         },
         {
             "district_name":"普陀区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":6,
+            "asymptomatic":107,
+            "total":113,
             "addresses":[
                 "石泉路450弄",
                 "金沙江路753弄",
@@ -2150,9 +2150,9 @@
         },
         {
             "district_name":"崇明区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":1,
+            "asymptomatic":54,
+            "total":55,
             "addresses":[
                 "先进村",
                 "江南大道",

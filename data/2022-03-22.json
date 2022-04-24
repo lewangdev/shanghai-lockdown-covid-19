@@ -239,9 +239,9 @@
         },
         {
             "district_name":"徐汇区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":2,
+            "asymptomatic":85,
+            "total":87,
             "addresses":[
                 "龙吴路1343弄",
                 "龙吴路2588弄",

@@ -355,9 +355,9 @@
         },
         {
             "district_name":"长宁区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":2,
+            "asymptomatic":27,
+            "total":29,
             "addresses":[
                 "虹桥路2388号",
                 "东诸安浜路103号",

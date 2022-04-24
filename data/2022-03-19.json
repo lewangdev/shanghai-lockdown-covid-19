@@ -233,9 +233,9 @@
         },
         {
             "district_name":"宝山区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":1,
+            "asymptomatic":16,
+            "total":17,
             "addresses":[
                 "大华路301弄",
                 "祁连二村C街坊",

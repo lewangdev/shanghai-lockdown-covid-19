@@ -44,7 +44,7 @@ def extract_cases(line: str):
         (_, _, _, _, _, confirmed, _, asymptomatic) = m3.groups()
         return (int(confirmed), int(asymptomatic))
 
-    regex4 = "(\\d+)年(\\d+)月(\\d+)日，(.*?)新增(\\d+)例本土(.*?)确诊病例(、|和)(\\d+)例本土无症状感染者.*?"
+    regex4 = "(\\d+)年(\\d+)月(\\d+)日，(.*?)新增(\\d+)例本土(.*?)确诊病例(、|，|和)(\\d+)例本土无症状感染者.*?"
     m4 = re.match(regex4, line, re.IGNORECASE)
     if m4 is not None:
         (_, _, _, _, confirmed, _, _, asymptomatic) = m4.groups()

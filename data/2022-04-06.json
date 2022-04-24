@@ -4652,9 +4652,9 @@
         },
         {
             "district_name":"青浦区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":4,
+            "asymptomatic":466,
+            "total":470,
             "addresses":[
                 "2022年4月6日青浦",
                 "区新增4例本土确诊病例466例本土无症状感染者分别居住于：",
