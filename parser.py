@@ -13,6 +13,9 @@ def parse_to_lines(filename: str):
     soup = BeautifulSoup(html_content, 'html.parser')
     span_elems = soup.select("#js_content section span")
 
+    if len(span_elems) == 0:
+        span_elems = soup.select("#ivs_content p")
+
     lines = []
     for span_elem in span_elems:
         text = span_elem.text
@@ -47,7 +50,7 @@ def extract_cases(line: str):
 def get_json_data(lines):
     total = None
     districts = []
-    regex_total = "市卫健委(.*?)通报：(.*?)(\\d+)年(\\d+)月(\\d+)日(.*?)新增本土新冠肺炎确诊病例(\\d+)例和无症状感染者(\\d+)例"
+    regex_total = "市卫健委(.*?)通报：(.*?)(\\d+)年(\\d+)月(\\d+)日(.*?)新增本土新冠肺炎确诊病例(\\d+)例(.*?)和无症状感染者(\\d+)例.*?"
     regex_district = "(\\d+)年(\\d+)月(\\d+)日，(.*?)新增.*?"
     pattern_total = re.compile(regex_total, re.IGNORECASE)
     pattern_district = re.compile(regex_district, re.IGNORECASE)
@@ -56,10 +59,10 @@ def get_json_data(lines):
     for line in lines:
         total_match = pattern_total.match(line)
         if not total_found and total_match is not None:
-            (_, _, y, m, d, _, confirmed, asymptomatic) = total_match.groups()
+            (_, _, y, m, d, _, confirmed, _, asymptomatic) = total_match.groups()
             total_found = True
             total = dict(
-                date=f"{y}-{m:0>2}-{d}", confirmed=int(confirmed), asymptomatic=int(asymptomatic),
+                date=f"{y}-{m:0>2}-{d:0>2}", confirmed=int(confirmed), asymptomatic=int(asymptomatic),
                 total=int(confirmed)+int(asymptomatic)
             )
             continue
@@ -69,7 +72,7 @@ def get_json_data(lines):
             (_, _, _, district_name) = district_match.groups()
             (confirmed, asymptomatic) = extract_cases(line)
             district_matched = dict(
-                district_name=district_name, confirmed=int(confirmed),
+                district_name=district_name.replace("区无", "区"), confirmed=int(confirmed),
                 asymptomatic=int(asymptomatic), total=int(confirmed)+int(asymptomatic), addresses=[])
             districts.append(district_matched)
         else:
@@ -89,15 +92,13 @@ def get_json_data(lines):
     return total
 
 
-if __name__ == "__main__":
-    # filename = "archived_html/22584a06e898fce7cda176c651650497.html"
-    # lines = parse_to_lines(filename)
-    # total = get_json_data(lines)
-    # ret = json.dumps(total, ensure_ascii=False, indent=4,
-    #                 separators=(',', ':'))
-    # print(ret)
-    filename = "archived_html/urls.json"
-    with open(filename, 'r') as f:
+def get_json_data_from_file(filename: str):
+    lines = parse_to_lines(filename)
+    return get_json_data(lines)
+
+
+def generate_data_from_urls(urls_filename: str):
+    with open(urls_filename, 'r') as f:
         urls = json.load(f)
 
     regex = "(\\d+)月(\\d+)日（(.*?)时）本市各区确诊病例、无症状感染者居住地信息.*?"
@@ -109,10 +110,22 @@ if __name__ == "__main__":
             continue
 
         filename = "archived_html/" + url['filename']
-        lines = parse_to_lines(filename)
-        total = get_json_data(lines)
+        print(f"Parse: {text}, filename: {filename}")
+
+        total = get_json_data_from_file(filename)
         ret = json.dumps(total, ensure_ascii=False, indent=4,
                          separators=(',', ':'))
 
         with open(f"data/{total['date']}.json", 'w') as f:
             f.write(ret)
+
+
+if __name__ == "__main__":
+    # filename = "archived_html/d52951915aaf51521046ddf7e70776f5.html"
+    # total = get_json_data_from_file(filename)
+    # ret = json.dumps(total, ensure_ascii=False,
+    #                  indent=4, separators=(',', ':'))
+    # print(ret)
+
+    urls_filename = "archived_html/urls.json"
+    generate_data_from_urls(urls_filename)
