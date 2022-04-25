@@ -10,7 +10,7 @@
             "confirmed":1139,
             "asymptomatic":13888,
             "total":15027,
-            "addresses":[
+            "places":[
                 "八灶村郭家宅",
                 "八灶村倪家宅",
                 "八灶村张家宅",
@@ -1881,7 +1881,7 @@
             "confirmed":227,
             "asymptomatic":1181,
             "total":1408,
-            "addresses":[
+            "places":[
                 "半淞园路178号",
                 "半淞园路188号",
                 "半淞园路650号",
@@ -2405,7 +2405,7 @@
             "confirmed":49,
             "asymptomatic":171,
             "total":220,
-            "addresses":[
+            "places":[
                 "安远路723号",
                 "宝山路499弄",
                 "长安路550弄",
@@ -2500,7 +2500,7 @@
             "confirmed":143,
             "asymptomatic":1349,
             "total":1492,
-            "addresses":[
+            "places":[
                 "百花街350号",
                 "百色路133弄",
                 "宾阳路18弄",
@@ -2873,7 +2873,7 @@
             "confirmed":105,
             "asymptomatic":852,
             "total":957,
-            "addresses":[
+            "places":[
                 "安化路111弄",
                 "安化路181号",
                 "安化路470弄",
@@ -3196,7 +3196,7 @@
             "confirmed":45,
             "asymptomatic":430,
             "total":475,
-            "addresses":[
+            "places":[
                 "安远路188弄",
                 "安远路230弄",
                 "安远路84号",
@@ -3331,7 +3331,7 @@
             "confirmed":121,
             "asymptomatic":1367,
             "total":1488,
-            "addresses":[
+            "places":[
                 "安国路223弄",
                 "安国路285号",
                 "安国路28弄",
@@ -3861,7 +3861,7 @@
             "confirmed":54,
             "asymptomatic":1131,
             "total":1185,
-            "addresses":[
+            "places":[
                 "爱国二村",
                 "爱国路301弄",
                 "爱国路94号",
@@ -4250,7 +4250,7 @@
             "confirmed":13,
             "asymptomatic":638,
             "total":651,
-            "addresses":[
+            "places":[
                 "爱辉路28弄",
                 "爱辉路701号",
                 "安达路241号",
@@ -4489,7 +4489,7 @@
             "confirmed":372,
             "asymptomatic":2567,
             "total":2939,
-            "addresses":[
+            "places":[
                 "爱博一村",
                 "爱博二村",
                 "爱博三村",
@@ -5120,7 +5120,7 @@
             "confirmed":54,
             "asymptomatic":667,
             "total":721,
-            "addresses":[
+            "places":[
                 "爱特路68弄",
                 "爱特路877号",
                 "安诚路180弄",
@@ -5320,7 +5320,7 @@
             "confirmed":12,
             "asymptomatic":22,
             "total":34,
-            "addresses":[
+            "places":[
                 "红光村",
                 "红旗新村",
                 "金展路1356弄",
@@ -5332,7 +5332,7 @@
             "confirmed":0,
             "asymptomatic":526,
             "total":526,
-            "addresses":[
+            "places":[
                 "安乐街106号",
                 "八字桥村",
                 "白苧路450弄",
@@ -5561,7 +5561,7 @@
             "confirmed":99,
             "asymptomatic":220,
             "total":319,
-            "addresses":[
+            "places":[
                 "北青公路",
                 "北青公路3638号",
                 "北青公路4328弄",
@@ -5646,7 +5646,7 @@
             "confirmed":2,
             "asymptomatic":81,
             "total":83,
-            "addresses":[
+            "places":[
                 "安邬路188号",
                 "川南奉公路8547号",
                 "江海村",
@@ -5664,7 +5664,7 @@
             "confirmed":0,
             "asymptomatic":56,
             "total":56,
-            "addresses":[
+            "places":[
                 "江南大道",
                 "建筑工地",
                 "长凯路253号",

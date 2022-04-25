@@ -10,7 +10,7 @@
             "confirmed":31,
             "asymptomatic":1883,
             "total":1914,
-            "addresses":[
+            "places":[
                 "国展路1756号工地生活区",
                 "康安路御北路交界口工地生活区",
                 "环龙路439弄",
@@ -696,7 +696,7 @@
             "confirmed":0,
             "asymptomatic":23,
             "total":23,
-            "addresses":[
+            "places":[
                 "永年路149弄",
                 "顺昌路560号",
                 "丽园路873号",
@@ -720,7 +720,7 @@
             "confirmed":0,
             "asymptomatic":2,
             "total":2,
-            "addresses":[
+            "places":[
                 "恒通路360号",
                 "育婴堂路38弄"
             ]
@@ -730,7 +730,7 @@
             "confirmed":1,
             "asymptomatic":2,
             "total":3,
-            "addresses":[
+            "places":[
                 "龙吴路2418弄",
                 "新乐路7号"
             ]
@@ -740,7 +740,7 @@
             "confirmed":0,
             "asymptomatic":4,
             "total":4,
-            "addresses":[
+            "places":[
                 "天山路288弄",
                 "东诸安浜路103号",
                 "新华路569弄",
@@ -752,7 +752,7 @@
             "confirmed":1,
             "asymptomatic":8,
             "total":9,
-            "addresses":[
+            "places":[
                 "交通路1461弄",
                 "曹杨七村",
                 "宜昌路715弄",
@@ -766,7 +766,7 @@
             "confirmed":0,
             "asymptomatic":4,
             "total":4,
-            "addresses":[
+            "places":[
                 "场中路803弄",
                 "大连路975弄",
                 "车站西路80弄"
@@ -777,7 +777,7 @@
             "confirmed":0,
             "asymptomatic":11,
             "total":11,
-            "addresses":[
+            "places":[
                 "怀德路398号",
                 "闸殷路75弄",
                 "军工路2866号",
@@ -792,7 +792,7 @@
             "confirmed":0,
             "asymptomatic":4,
             "total":4,
-            "addresses":[
+            "places":[
                 "友谊路2858弄",
                 "高境路477弄",
                 "祁华路655弄",
@@ -804,7 +804,7 @@
             "confirmed":4,
             "asymptomatic":202,
             "total":206,
-            "addresses":[
+            "places":[
                 "报春路862弄",
                 "北青公路2055弄58支弄",
                 "北沈路260弄",
@@ -886,7 +886,7 @@
             "confirmed":0,
             "asymptomatic":19,
             "total":19,
-            "addresses":[
+            "places":[
                 "新源路1288弄",
                 "福海路111弄",
                 "北和公路1650号",
@@ -904,7 +904,7 @@
             "confirmed":0,
             "asymptomatic":0,
             "total":0,
-            "addresses":[
+            "places":[
                 "新巷村"
             ]
         },
@@ -913,7 +913,7 @@
             "confirmed":1,
             "asymptomatic":14,
             "total":15,
-            "addresses":[
+            "places":[
                 "陈坊村",
                 "沪松公路1399弄",
                 "九亭大街671弄",
@@ -932,7 +932,7 @@
             "confirmed":0,
             "asymptomatic":13,
             "total":13,
-            "addresses":[
+            "places":[
                 "秀龙村",
                 "盈港东路8300弄",
                 "久远路1660弄",
@@ -947,14 +947,14 @@
             "confirmed":0,
             "asymptomatic":0,
             "total":0,
-            "addresses":[]
+            "places":[]
         },
         {
             "district_name":"崇明区",
             "confirmed":0,
             "asymptomatic":41,
             "total":41,
-            "addresses":[
+            "places":[
                 "潘圆公路161弄",
                 "丰福路599弄",
                 "酱园弄101号",

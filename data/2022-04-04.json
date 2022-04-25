@@ -10,7 +10,7 @@
             "confirmed":205,
             "asymptomatic":6866,
             "total":7071,
-            "addresses":[
+            "places":[
                 "八灶村郭家宅",
                 "八灶村周家宅",
                 "白杨路1065弄",
@@ -1461,7 +1461,7 @@
             "confirmed":8,
             "asymptomatic":962,
             "total":970,
-            "addresses":[
+            "places":[
                 "白渡路288弄",
                 "保屯路135号",
                 "保屯路50弄",
@@ -1936,7 +1936,7 @@
             "confirmed":1,
             "asymptomatic":49,
             "total":50,
-            "addresses":[
+            "places":[
                 "宝昌路399弄",
                 "宝昌路731弄",
                 "场中路2471弄",
@@ -1962,7 +1962,7 @@
             "confirmed":8,
             "asymptomatic":1221,
             "total":1229,
-            "addresses":[
+            "places":[
                 "安福路191弄",
                 "百花街345弄",
                 "百色路238弄",
@@ -2373,7 +2373,7 @@
             "confirmed":1,
             "asymptomatic":32,
             "total":33,
-            "addresses":[
+            "places":[
                 "安顺路231弄（住宅）",
                 "长宁路706号",
                 "程家桥路80弄",
@@ -2411,7 +2411,7 @@
             "confirmed":4,
             "asymptomatic":250,
             "total":254,
-            "addresses":[
+            "places":[
                 "安远路230弄",
                 "白丽路99弄",
                 "白玉路358弄",
@@ -2523,7 +2523,7 @@
             "confirmed":5,
             "asymptomatic":603,
             "total":608,
-            "addresses":[
+            "places":[
                 "安国路223弄",
                 "安国路280号",
                 "安国路288弄",
@@ -2792,7 +2792,7 @@
             "confirmed":10,
             "asymptomatic":210,
             "total":220,
-            "addresses":[
+            "places":[
                 "爱国二村",
                 "安波路265弄",
                 "鞍山路310弄",
@@ -2934,7 +2934,7 @@
             "confirmed":1,
             "asymptomatic":264,
             "total":265,
-            "addresses":[
+            "places":[
                 "白杨村",
                 "班溪路55弄",
                 "宝林路462弄",
@@ -3090,7 +3090,7 @@
             "confirmed":11,
             "asymptomatic":1370,
             "total":1381,
-            "addresses":[
+            "places":[
                 "爱博三村",
                 "爱博五村",
                 "安乐村",
@@ -3260,7 +3260,7 @@
             "confirmed":4,
             "asymptomatic":233,
             "total":237,
-            "addresses":[
+            "places":[
                 "安新路968号",
                 "白银路399号",
                 "北新村",
@@ -3366,7 +3366,7 @@
             "confirmed":1,
             "asymptomatic":51,
             "total":52,
-            "addresses":[
+            "places":[
                 "水库村",
                 "龙山路518弄",
                 "龙轩路789弄",
@@ -3402,7 +3402,7 @@
             "confirmed":0,
             "asymptomatic":553,
             "total":553,
-            "addresses":[
+            "places":[
                 "伴亭路855弄",
                 "北厍路116号",
                 "北松公路4999弄",
@@ -3619,7 +3619,7 @@
             "confirmed":1,
             "asymptomatic":313,
             "total":314,
-            "addresses":[
+            "places":[
                 "北青公路6972弄",
                 "北青公路7523号",
                 "北青公路8768号",
@@ -3765,7 +3765,7 @@
             "confirmed":2,
             "asymptomatic":62,
             "total":64,
-            "addresses":[
+            "places":[
                 "北宋村",
                 "蔡家桥村",
                 "大宅小区",
@@ -3812,7 +3812,7 @@
             "confirmed":0,
             "asymptomatic":47,
             "total":47,
-            "addresses":[
+            "places":[
                 "江南大道",
                 "长橘路500弄",
                 "米新村",

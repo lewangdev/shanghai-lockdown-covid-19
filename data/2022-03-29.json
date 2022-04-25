@@ -10,7 +10,7 @@
             "confirmed":169,
             "asymptomatic":2014,
             "total":2183,
-            "addresses":[
+            "places":[
                 "瑞意路399弄",
                 "崂山路645弄",
                 "浦电路221号",
@@ -765,7 +765,7 @@
             "confirmed":6,
             "asymptomatic":104,
             "total":110,
-            "addresses":[
+            "places":[
                 "永年路149弄,",
                 "静修路79弄,",
                 "西仓桥街161弄,",
@@ -857,7 +857,7 @@
             "confirmed":8,
             "asymptomatic":167,
             "total":175,
-            "addresses":[
+            "places":[
                 "洛川中路1100弄",
                 "原平路918弄",
                 "汾西路400弄",
@@ -955,7 +955,7 @@
             "confirmed":34,
             "asymptomatic":1066,
             "total":1100,
-            "addresses":[
+            "places":[
                 "长桥二村",
                 "汇成二村",
                 "园南一村",
@@ -1227,7 +1227,7 @@
             "confirmed":3,
             "asymptomatic":27,
             "total":30,
-            "addresses":[
+            "places":[
                 "长宁路476弄",
                 "新泾五村",
                 "新泾一村",
@@ -1258,7 +1258,7 @@
             "confirmed":6,
             "asymptomatic":107,
             "total":113,
-            "addresses":[
+            "places":[
                 "石泉路450弄",
                 "金沙江路753弄",
                 "长寿路28弄",
@@ -1335,7 +1335,7 @@
             "confirmed":7,
             "asymptomatic":66,
             "total":73,
-            "addresses":[
+            "places":[
                 "吴淞路355弄",
                 "赤峰路525号",
                 "北苏州路400号",
@@ -1401,7 +1401,7 @@
             "confirmed":3,
             "asymptomatic":96,
             "total":99,
-            "addresses":[
+            "places":[
                 "国定路555弄",
                 "三门路358弄",
                 "双阳支路34号",
@@ -1485,7 +1485,7 @@
             "confirmed":33,
             "asymptomatic":330,
             "total":363,
-            "addresses":[
+            "places":[
                 "竹韵路58弄",
                 "朱家弄村",
                 "真金路1202号",
@@ -1642,7 +1642,7 @@
             "confirmed":29,
             "asymptomatic":959,
             "total":988,
-            "addresses":[
+            "places":[
                 "安乐村",
                 "白樟路99弄",
                 "报春路388弄",
@@ -1844,7 +1844,7 @@
             "confirmed":9,
             "asymptomatic":246,
             "total":255,
-            "addresses":[
+            "places":[
                 "春海路400弄",
                 "春荣路799弄",
                 "阜康西路36号",
@@ -1954,7 +1954,7 @@
             "confirmed":2,
             "asymptomatic":24,
             "total":26,
-            "addresses":[
+            "places":[
                 "金南街801弄",
                 "九工路2005弄",
                 "周栅村",
@@ -1970,7 +1970,7 @@
             "confirmed":0,
             "asymptomatic":0,
             "total":0,
-            "addresses":[
+            "places":[
                 "北松公路5208号",
                 "仓丰路855弄",
                 "仓丰路955弄",
@@ -2055,7 +2055,7 @@
             "confirmed":0,
             "asymptomatic":87,
             "total":87,
-            "addresses":[
+            "places":[
                 "北青公路4559号",
                 "福泉山东路33弄",
                 "高光路666号",
@@ -2089,7 +2089,7 @@
             "confirmed":1,
             "asymptomatic":95,
             "total":96,
-            "addresses":[
+            "places":[
                 "陆家桥村,",
                 "金海公路99弄",
                 "奉浦大道95弄",
@@ -2154,7 +2154,7 @@
             "confirmed":1,
             "asymptomatic":54,
             "total":55,
-            "addresses":[
+            "places":[
                 "先进村",
                 "江南大道",
                 "先进村",

@@ -10,7 +10,7 @@
             "confirmed":108,
             "asymptomatic":1930,
             "total":2038,
-            "addresses":[
+            "places":[
                 "八灶村北张家宅",
                 "板泉路2000弄",
                 "板泉路50号",
@@ -734,7 +734,7 @@
             "confirmed":27,
             "asymptomatic":632,
             "total":659,
-            "addresses":[
+            "places":[
                 "海南西弄58号",
                 "万竹街30弄",
                 "宁波路620弄",
@@ -1017,7 +1017,7 @@
             "confirmed":26,
             "asymptomatic":298,
             "total":324,
-            "addresses":[
+            "places":[
                 "宝山路551号",
                 "晋元路88弄",
                 "淮安路801号",
@@ -1190,7 +1190,7 @@
             "confirmed":44,
             "asymptomatic":998,
             "total":1042,
-            "addresses":[
+            "places":[
                 "宾阳路28弄",
                 "融水路99弄",
                 "漕南小区",
@@ -1515,7 +1515,7 @@
             "confirmed":7,
             "asymptomatic":93,
             "total":100,
-            "addresses":[
+            "places":[
                 "东诸安浜路158弄",
                 "利西路277号",
                 "仙霞西路885弄",
@@ -1593,7 +1593,7 @@
             "confirmed":39,
             "asymptomatic":349,
             "total":388,
-            "addresses":[
+            "places":[
                 "梅川新村",
                 "大渡河路1550弄",
                 "梅川路1111弄",
@@ -1789,7 +1789,7 @@
             "confirmed":30,
             "asymptomatic":312,
             "total":342,
-            "addresses":[
+            "places":[
                 "祥德路15弄",
                 "水电路294号",
                 "水电路541弄",
@@ -1994,7 +1994,7 @@
             "confirmed":19,
             "asymptomatic":255,
             "total":274,
-            "addresses":[
+            "places":[
                 "鞍山八村",
                 "鞍山三村",
                 "鞍山四村",
@@ -2156,7 +2156,7 @@
             "confirmed":35,
             "asymptomatic":450,
             "total":485,
-            "addresses":[
+            "places":[
                 "月罗公路88号",
                 "水产西路268弄",
                 "宝山七村",
@@ -2386,7 +2386,7 @@
             "confirmed":55,
             "asymptomatic":774,
             "total":829,
-            "addresses":[
+            "places":[
                 "报春路218弄",
                 "报春路388弄",
                 "北吴路501弄",
@@ -2591,7 +2591,7 @@
             "confirmed":0,
             "asymptomatic":0,
             "total":0,
-            "addresses":[
+            "places":[
                 "宝安公路4259号",
                 "宝安公路5063号",
                 "昌吉东路888弄",
@@ -2812,7 +2812,7 @@
             "confirmed":0,
             "asymptomatic":60,
             "total":60,
-            "addresses":[
+            "places":[
                 "亭升路88号",
                 "后岗村",
                 "立新村",
@@ -2853,7 +2853,7 @@
             "confirmed":8,
             "asymptomatic":559,
             "total":567,
-            "addresses":[
+            "places":[
                 "庵前小区",
                 "奥林匹克花园",
                 "北场第二小区",
@@ -3020,7 +3020,7 @@
             "confirmed":3,
             "asymptomatic":228,
             "total":231,
-            "addresses":[
+            "places":[
                 "北青公路3408弄",
                 "陈东村",
                 "城东新村",
@@ -3129,7 +3129,7 @@
             "confirmed":8,
             "asymptomatic":149,
             "total":157,
-            "addresses":[
+            "places":[
                 "嘉园路361弄,",
                 "邮电路188号,",
                 "光辉村,",
@@ -3225,7 +3225,7 @@
             "confirmed":3,
             "asymptomatic":110,
             "total":113,
-            "addresses":[
+            "places":[
                 "丰福路699弄",
                 "先进村",
                 "江南大道",

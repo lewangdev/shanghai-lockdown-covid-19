@@ -10,7 +10,7 @@
             "confirmed":756,
             "asymptomatic":3709,
             "total":4465,
-            "addresses":[
+            "places":[
                 "白墙村",
                 "白杨路1065弄",
                 "白杨路1155弄",
@@ -1000,7 +1000,7 @@
             "confirmed":252,
             "asymptomatic":2845,
             "total":3097,
-            "addresses":[
+            "places":[
                 "半淞园路188号半淞园路585弄",
                 "半淞园路628号",
                 "半淞园路650号",
@@ -1956,7 +1956,7 @@
             "confirmed":164,
             "asymptomatic":966,
             "total":1130,
-            "addresses":[
+            "places":[
                 "安远路389弄",
                 "安远路515弄",
                 "宝昌路632弄",
@@ -2332,7 +2332,7 @@
             "confirmed":191,
             "asymptomatic":1256,
             "total":1447,
-            "addresses":[
+            "places":[
                 "安福路53弄",
                 "百花街345弄",
                 "百色路133弄",
@@ -2720,7 +2720,7 @@
             "confirmed":123,
             "asymptomatic":603,
             "total":726,
-            "addresses":[
+            "places":[
                 "安化路315号（住宅）",
                 "安化路321号",
                 "安顺路156号",
@@ -2934,7 +2934,7 @@
             "confirmed":49,
             "asymptomatic":506,
             "total":555,
-            "addresses":[
+            "places":[
                 "安远路188弄,",
                 "安远路662弄,",
                 "澳门路660弄,",
@@ -3070,7 +3070,7 @@
             "confirmed":102,
             "asymptomatic":730,
             "total":832,
-            "addresses":[
+            "places":[
                 "安汾路780弄",
                 "安国路28弄",
                 "安国路76号",
@@ -3425,7 +3425,7 @@
             "confirmed":202,
             "asymptomatic":1803,
             "total":2005,
-            "addresses":[
+            "places":[
                 "爱国二村",
                 "爱国路301弄",
                 "安波路200弄",
@@ -3915,7 +3915,7 @@
             "confirmed":107,
             "asymptomatic":726,
             "total":833,
-            "addresses":[
+            "places":[
                 "白沙园路333弄",
                 "宝安公路88号",
                 "宝安公路218号",
@@ -4248,7 +4248,7 @@
             "confirmed":291,
             "asymptomatic":1395,
             "total":1686,
-            "addresses":[
+            "places":[
                 "爱博一村,",
                 "爱博二村,",
                 "爱博三村,",
@@ -4667,7 +4667,7 @@
             "confirmed":82,
             "asymptomatic":567,
             "total":649,
-            "addresses":[
+            "places":[
                 "安辰路伊宁路交叉口工地",
                 "安新村",
                 "白银路325号",
@@ -4854,7 +4854,7 @@
             "confirmed":16,
             "asymptomatic":1,
             "total":17,
-            "addresses":[
+            "places":[
                 "蒙山路1256号"
             ]
         },
@@ -4863,7 +4863,7 @@
             "confirmed":165,
             "asymptomatic":511,
             "total":676,
-            "addresses":[
+            "places":[
                 "北厍路33弄",
                 "北松公路4560号",
                 "北松公路4648号",
@@ -5067,7 +5067,7 @@
             "confirmed":120,
             "asymptomatic":160,
             "total":280,
-            "addresses":[
+            "places":[
                 "北青公路",
                 "北青公路4458弄",
                 "北青公路6972弄",
@@ -5135,14 +5135,14 @@
             "confirmed":6,
             "asymptomatic":26,
             "total":32,
-            "addresses":[]
+            "places":[]
         },
         {
             "district_name":"崇明区",
             "confirmed":0,
             "asymptomatic":57,
             "total":57,
-            "addresses":[]
+            "places":[]
         }
     ]
 }

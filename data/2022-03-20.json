@@ -10,7 +10,7 @@
             "confirmed":1,
             "asymptomatic":219,
             "total":220,
-            "addresses":[
+            "places":[
                 "三三公路5020弄",
                 "芳华路933弄",
                 "鹤驰路99弄",
@@ -157,7 +157,7 @@
             "confirmed":2,
             "asymptomatic":40,
             "total":42,
-            "addresses":[
+            "places":[
                 "茂名南路9弄",
                 "黄陂南路783号",
                 "黄陂南路506弄",
@@ -188,7 +188,7 @@
             "confirmed":0,
             "asymptomatic":32,
             "total":32,
-            "addresses":[
+            "places":[
                 "永兴小马路70号",
                 "高平路774弄",
                 "原平路1028弄",
@@ -220,7 +220,7 @@
             "confirmed":1,
             "asymptomatic":45,
             "total":46,
-            "addresses":[
+            "places":[
                 "梅陇路565弄",
                 "东安路230弄",
                 "长桥七村",
@@ -247,7 +247,7 @@
             "confirmed":1,
             "asymptomatic":12,
             "total":13,
-            "addresses":[
+            "places":[
                 "法华镇路457弄",
                 "安化路508号",
                 "江苏路320弄",
@@ -266,7 +266,7 @@
             "confirmed":0,
             "asymptomatic":8,
             "total":8,
-            "addresses":[
+            "places":[
                 "政悦路588弄",
                 "凤城三村",
                 "怀德路348号",
@@ -281,7 +281,7 @@
             "confirmed":0,
             "asymptomatic":13,
             "total":13,
-            "addresses":[
+            "places":[
                 "宝菊路22弄",
                 "新沪路837弄",
                 "菊泉街400弄",
@@ -298,7 +298,7 @@
             "confirmed":18,
             "asymptomatic":247,
             "total":265,
-            "addresses":[
+            "places":[
                 "安乐村",
                 "报春路748弄",
                 "报春路816弄",
@@ -412,7 +412,7 @@
             "confirmed":0,
             "asymptomatic":11,
             "total":11,
-            "addresses":[
+            "places":[
                 "五星村蒋浜",
                 "泾波路219弄",
                 "枫湾路500弄",
@@ -429,7 +429,7 @@
             "confirmed":0,
             "asymptomatic":9,
             "total":9,
-            "addresses":[
+            "places":[
                 "银都西路85号",
                 "申港路50弄",
                 "松东路193弄",
@@ -445,7 +445,7 @@
             "confirmed":0,
             "asymptomatic":4,
             "total":4,
-            "addresses":[
+            "places":[
                 "盈港路1750号",
                 "城中北路40弄",
                 "前明村",
@@ -457,7 +457,7 @@
             "confirmed":0,
             "asymptomatic":13,
             "total":13,
-            "addresses":[
+            "places":[
                 "南奉公路3111弄",
                 "西闸公路1358弄",
                 "钜庭路66弄",

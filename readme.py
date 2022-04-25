@@ -16,6 +16,16 @@ if __name__ == "__main__":
         total = new_case["total"] + total
         cases.append(dict(date=new_case["date"], total=total))
 
+    # District data
+    district_new_cases_dict = {}
+    for new_case in new_cases:
+        for district in new_case["districts"]:
+            district_name = district['district_name']
+            district_new_cases = district_new_cases_dict.get(district_name, [])
+            district_new_cases.append(
+                dict(date=new_case["date"], total=district['total'],
+                     place_count=len(district['places'])))
+
     content = env.get_template(
         "README.md.j2").render(new_cases=sorted(new_cases, key=lambda x: x['date'], reverse=True),
                                cases=sorted(cases, key=lambda x: x['date'], reverse=True))

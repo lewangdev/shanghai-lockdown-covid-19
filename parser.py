@@ -90,7 +90,7 @@ def parse_lines_to_json(lines):
             (confirmed, asymptomatic) = extract_cases(line)
             district_matched = dict(
                 district_name=district_name.replace("区无", "区"), confirmed=int(confirmed),
-                asymptomatic=int(asymptomatic), total=int(confirmed)+int(asymptomatic), addresses=[])
+                asymptomatic=int(asymptomatic), total=int(confirmed)+int(asymptomatic), places=[])
             districts.append(district_matched)
         else:
             if district_matched is None:
@@ -100,10 +100,10 @@ def parse_lines_to_json(lines):
                 district_matched = None
                 continue
 
-            address = line.strip().replace("、", "").replace(
+            place = line.strip().replace("、", "").replace(
                 "，", "").replace("。", "")
-            if address != "" and address not in SHANGHAI_DISTRICTS:
-                district_matched['addresses'].append(address)
+            if place != "" and place not in SHANGHAI_DISTRICTS:
+                district_matched['places'].append(place)
 
     total['districts'] = districts
     return total

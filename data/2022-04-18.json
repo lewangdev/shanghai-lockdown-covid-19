@@ -10,7 +10,7 @@
             "confirmed":1075,
             "asymptomatic":7756,
             "total":8831,
-            "addresses":[
+            "places":[
                 "白杨路199弄",
                 "白杨路360弄",
                 "百龙新村",
@@ -1415,7 +1415,7 @@
             "confirmed":362,
             "asymptomatic":2961,
             "total":3323,
-            "addresses":[
+            "places":[
                 "安澜路13弄",
                 "半淞园路188号",
                 "半淞园路585弄",
@@ -2338,7 +2338,7 @@
             "confirmed":203,
             "asymptomatic":807,
             "total":1010,
-            "addresses":[
+            "places":[
                 "安远路139号",
                 "安远路389弄",
                 "宝昌路738弄",
@@ -2636,7 +2636,7 @@
             "confirmed":68,
             "asymptomatic":504,
             "total":572,
-            "addresses":[
+            "places":[
                 "漕宝路199号",
                 "漕溪路125弄",
                 "漕溪三村",
@@ -2815,7 +2815,7 @@
             "confirmed":193,
             "asymptomatic":487,
             "total":680,
-            "addresses":[
+            "places":[
                 "安化路279号",
                 "安化路327号",
                 "安顺路77弄",
@@ -3015,7 +3015,7 @@
             "confirmed":21,
             "asymptomatic":350,
             "total":371,
-            "addresses":[
+            "places":[
                 "安远路230弄,",
                 "白兰路117弄,",
                 "白丽路185弄,",
@@ -3153,7 +3153,7 @@
             "confirmed":233,
             "asymptomatic":859,
             "total":1092,
-            "addresses":[
+            "places":[
                 "安国路28弄",
                 "安国路3号",
                 "安国路56号",
@@ -3594,7 +3594,7 @@
             "confirmed":64,
             "asymptomatic":417,
             "total":481,
-            "addresses":[
+            "places":[
                 "安图路18弄",
                 "安图路76号",
                 "安图新村",
@@ -3781,7 +3781,7 @@
             "confirmed":203,
             "asymptomatic":827,
             "total":1030,
-            "addresses":[
+            "places":[
                 "爱辉路301号",
                 "爱辉路701号",
                 "班溪路55弄",
@@ -4135,7 +4135,7 @@
             "confirmed":312,
             "asymptomatic":1060,
             "total":1372,
-            "addresses":[
+            "places":[
                 "爱博一村",
                 "爱博二村",
                 "爱博五村",
@@ -4471,7 +4471,7 @@
             "confirmed":72,
             "asymptomatic":516,
             "total":588,
-            "addresses":[
+            "places":[
                 "安辰路伊宁路交叉口工地",
                 "白银路928弄3号",
                 "宝安公路3635号",
@@ -4664,14 +4664,14 @@
             "confirmed":3,
             "asymptomatic":4,
             "total":7,
-            "addresses":[]
+            "places":[]
         },
         {
             "district_name":"松江区",
             "confirmed":191,
             "asymptomatic":571,
             "total":762,
-            "addresses":[
+            "places":[
                 "白苧路450弄",
                 "伴亭路258号",
                 "北厍路116号",
@@ -4880,7 +4880,7 @@
             "confirmed":77,
             "asymptomatic":180,
             "total":257,
-            "addresses":[
+            "places":[
                 "北青公路8865号",
                 "大新街",
                 "东徐联路666弄",
@@ -4940,7 +4940,7 @@
             "confirmed":2,
             "asymptomatic":12,
             "total":14,
-            "addresses":[
+            "places":[
                 "奉字路33号"
             ]
         },
@@ -4949,7 +4949,7 @@
             "confirmed":5,
             "asymptomatic":21,
             "total":26,
-            "addresses":[]
+            "places":[]
         }
     ]
 }

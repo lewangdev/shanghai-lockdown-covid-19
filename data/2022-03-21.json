@@ -10,7 +10,7 @@
             "confirmed":6,
             "asymptomatic":163,
             "total":169,
-            "addresses":[
+            "places":[
                 "军港公路朝丰新村",
                 "妙境路124弄",
                 "鹤沙路688弄",
@@ -124,7 +124,7 @@
             "confirmed":0,
             "asymptomatic":0,
             "total":0,
-            "addresses":[
+            "places":[
                 "永年路24弄",
                 "建德路1号",
                 "新昌路477弄",
@@ -166,7 +166,7 @@
             "confirmed":0,
             "asymptomatic":44,
             "total":44,
-            "addresses":[
+            "places":[
                 "茂名北路93号",
                 "万荣路1050弄",
                 "中山北路828号",
@@ -196,7 +196,7 @@
             "confirmed":4,
             "asymptomatic":126,
             "total":130,
-            "addresses":[
+            "places":[
                 "罗秀路887号",
                 "龙华西路591弄",
                 "龙吴路2888弄",
@@ -258,7 +258,7 @@
             "confirmed":0,
             "asymptomatic":26,
             "total":26,
-            "addresses":[
+            "places":[
                 "哈密路398弄",
                 "剑河路409弄",
                 "宣化路299弄",
@@ -286,7 +286,7 @@
             "confirmed":0,
             "asymptomatic":10,
             "total":10,
-            "addresses":[
+            "places":[
                 "佳木斯路266号",
                 "中原路32弄",
                 "延吉五村",
@@ -303,7 +303,7 @@
             "confirmed":0,
             "asymptomatic":67,
             "total":67,
-            "addresses":[
+            "places":[
                 "大华二村二街坊",
                 "菊太路1755弄",
                 "长江路32号",
@@ -355,7 +355,7 @@
             "confirmed":10,
             "asymptomatic":112,
             "total":122,
-            "addresses":[
+            "places":[
                 "报春路816弄",
                 "北江燕路228弄",
                 "沧源路660弄",
@@ -417,7 +417,7 @@
             "confirmed":1,
             "asymptomatic":15,
             "total":16,
-            "addresses":[
+            "places":[
                 "分别居住于：",
                 "金光村",
                 "众安街798弄",
@@ -436,7 +436,7 @@
             "confirmed":0,
             "asymptomatic":0,
             "total":0,
-            "addresses":[
+            "places":[
                 "庄家村",
                 "广富林路600弄",
                 "陈春公路555弄",
@@ -466,7 +466,7 @@
             "confirmed":0,
             "asymptomatic":5,
             "total":5,
-            "addresses":[
+            "places":[
                 "城东新村",
                 "盈港东路4709弄",
                 "火星村",
@@ -479,7 +479,7 @@
             "confirmed":1,
             "asymptomatic":21,
             "total":22,
-            "addresses":[
+            "places":[
                 "吴房村",
                 "海马路5888弄",
                 "运河路200弄",

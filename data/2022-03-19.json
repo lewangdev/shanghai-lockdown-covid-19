@@ -10,7 +10,7 @@
             "confirmed":8,
             "asymptomatic":127,
             "total":135,
-            "addresses":[
+            "places":[
                 "利津路1313弄",
                 "首善街555弄",
                 "汇南村",
@@ -104,7 +104,7 @@
             "confirmed":0,
             "asymptomatic":36,
             "total":36,
-            "addresses":[
+            "places":[
                 "中山南一路247弄",
                 "鲁班路721弄",
                 "鲁班路388弄",
@@ -136,7 +136,7 @@
             "confirmed":0,
             "asymptomatic":15,
             "total":15,
-            "addresses":[
+            "places":[
                 "长临路380弄",
                 "茂名北路93号",
                 "长宁路209弄",
@@ -157,7 +157,7 @@
             "confirmed":0,
             "asymptomatic":61,
             "total":61,
-            "addresses":[
+            "places":[
                 "天钥桥路380弄",
                 "乐山路10弄",
                 "斜土路2601号",
@@ -204,7 +204,7 @@
             "confirmed":0,
             "asymptomatic":12,
             "total":12,
-            "addresses":[
+            "places":[
                 "汇川路88弄",
                 "宣化路113弄",
                 "宣化路57弄",
@@ -221,7 +221,7 @@
             "confirmed":0,
             "asymptomatic":14,
             "total":14,
-            "addresses":[
+            "places":[
                 "政悦路588弄",
                 "包头路179弄",
                 "控江路1209号",
@@ -237,7 +237,7 @@
             "confirmed":1,
             "asymptomatic":16,
             "total":17,
-            "addresses":[
+            "places":[
                 "大华路301弄",
                 "祁连二村C街坊",
                 "大华路455弄",
@@ -258,7 +258,7 @@
             "confirmed":4,
             "asymptomatic":49,
             "total":53,
-            "addresses":[
+            "places":[
                 "虹梅南路990号",
                 "纪东村",
                 "普乐路665弄",
@@ -296,7 +296,7 @@
             "confirmed":2,
             "asymptomatic":79,
             "total":81,
-            "addresses":[
+            "places":[
                 "嘉定镇街道李园二村",
                 "崇教路267号对面工地宿舍",
                 "安研路66弄",
@@ -338,7 +338,7 @@
             "confirmed":0,
             "asymptomatic":3,
             "total":3,
-            "addresses":[
+            "places":[
                 "海盛路515弄",
                 "星火村",
                 "下坊村"
@@ -349,7 +349,7 @@
             "confirmed":0,
             "asymptomatic":16,
             "total":16,
-            "addresses":[
+            "places":[
                 "东港村",
                 "银都西路85号",
                 "松东路193弄",
@@ -364,7 +364,7 @@
             "confirmed":0,
             "asymptomatic":5,
             "total":5,
-            "addresses":[
+            "places":[
                 "北青公路3488号",
                 "乐爱路38弄",
                 "沪青平公路2095号"
@@ -375,7 +375,7 @@
             "confirmed":0,
             "asymptomatic":6,
             "total":6,
-            "addresses":[
+            "places":[
                 "振泰路256弄",
                 "振泰路168弄",
                 "西闸路1118弄",
