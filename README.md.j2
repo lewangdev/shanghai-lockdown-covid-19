@@ -35,7 +35,7 @@ This project will be updated everyday before Shanghai reopen. JSON files with pl
 
 ### District New Cases
 
-|  | {% for district_name in district_names %} {{district_name}} | {% endfor %} 
+| Date/District | {% for district_name in district_names %} {{district_name}} | {% endfor %} 
 | ---- | {% for district_name in district_names %} ---------- | {% endfor %}
 
 {% for date, cases in cases_by_date.items() %}
@@ -54,7 +54,7 @@ This project will be updated everyday before Shanghai reopen. JSON files with pl
 
 ### District Covid-19 Places
 
-|  | {% for district_name in district_names %} {{district_name}} | {% endfor %} 
+| Date/District | {% for district_name in district_names %} {{district_name}} | {% endfor %} 
 | ---- | {% for district_name in district_names %} ---------- | {% endfor %}
 
 {% for date, cases in cases_by_date.items() %}
