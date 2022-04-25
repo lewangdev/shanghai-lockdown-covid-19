@@ -88,8 +88,10 @@ def parse_lines_to_json(lines):
         if district_match is not None:
             (_, _, _, district_name) = district_match.groups()
             (confirmed, asymptomatic) = extract_cases(line)
+            district_name_clean = district_name.replace(
+                "区无", "区").replace("无", "区").replace("区", "") + "区"
             district_matched = dict(
-                district_name=district_name.replace("区无", "区"), confirmed=int(confirmed),
+                district_name=district_name_clean, confirmed=int(confirmed),
                 asymptomatic=int(asymptomatic), total=int(confirmed)+int(asymptomatic), places=[])
             districts.append(district_matched)
         else:

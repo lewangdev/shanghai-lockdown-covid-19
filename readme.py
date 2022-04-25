@@ -22,9 +22,16 @@ if __name__ == "__main__":
         for district in new_case["districts"]:
             district_name = district['district_name']
             district_new_cases = district_new_cases_dict.get(district_name, [])
+            district_total = 0
+            if len(district_new_cases) > 0:
+                district_total = district_new_cases[-1]["total"]
             district_new_cases.append(
-                dict(date=new_case["date"], total=district['total'],
+                dict(date=new_case["date"], new_case=district['total'],
+                     total=district['total'] + district_total,
                      place_count=len(district['places'])))
+            district_new_cases_dict[district_name] = district_new_cases
+
+    print(district_new_cases_dict)
 
     content = env.get_template(
         "README.md.j2").render(new_cases=sorted(new_cases, key=lambda x: x['date'], reverse=True),
