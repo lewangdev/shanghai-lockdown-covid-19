@@ -15,7 +15,7 @@ This project will be updated everyday before Shanghai reopen.
 
 ![New cases](https://github.com/lewangdev/shanghai-lockdown-covid-19/blob/main/figture/new-cases.png?raw=true)
 
-| Date | New Cases  | Confirmed Cases | Asymptomatic Cases | Asymptomatic to Confirmed Cases |
+| Date | New Cases  | Confirmed Cases | Asymptomatic Cases | A2C Cases(*) |
 | ---- | ---------- | ---------------- | ----------------- | ---------------------------- |
 | 2022-04-24 | 18609 | 2472 | 16983 | 846 |
 | 2022-04-23 | 20517 | 1401 | 19657 | 541 |
@@ -52,6 +52,8 @@ This project will be updated everyday before Shanghai reopen.
 | 2022-03-21 | 896 | 31 | 865 | 0 |
 | 2022-03-20 | 758 | 24 | 734 | 0 |
 | 2022-03-19 | 503 | 17 | 492 | 6 |
+
+* A2C Cases: Asymptomatic cases that are confirmed.
 
 ### Cases
 

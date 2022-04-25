@@ -15,11 +15,13 @@ This project will be updated everyday before Shanghai reopen.
 
 ![New cases](https://github.com/lewangdev/shanghai-lockdown-covid-19/blob/main/figture/new-cases.png?raw=true)
 
-| Date | New Cases  | Confirmed Cases | Asymptomatic Cases | Asymptomatic to Confirmed Cases |
+| Date | New Cases  | Confirmed Cases | Asymptomatic Cases | A2C Cases(*) |
 | ---- | ---------- | ---------------- | ----------------- | ---------------------------- |
 {%for new_case in new_cases %}
 | {{new_case.date}} | {{new_case.total}} | {{new_case.confirmed}} | {{new_case.asymptomatic}} | {{new_case.asymptomatic_to_confirmed}} |
 {% endfor %}
+
+* A2C Cases: Asymptomatic cases that are confirmed.
 
 ### Cases
 
