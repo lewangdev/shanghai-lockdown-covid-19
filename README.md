@@ -15,7 +15,7 @@ This project will be updated everyday before Shanghai reopen. JSON files with pl
 
 ![New cases](https://github.com/lewangdev/shanghai-lockdown-covid-19/blob/main/figture/new-cases.png?raw=true)
 
-| Date | New Cases  | Confirmed Cases | Asymptomatic Cases | A2C Cases(*) |
+| Date/Details | New Cases  | Confirmed Cases | Asymptomatic Cases | A2C Cases(*) |
 | ---- | ---------- | ---------------- | ----------------- | ---------------------------- |
 | 2022-04-24 | 18609 | 2472 | 16983 | 846 |
 | 2022-04-23 | 20517 | 1401 | 19657 | 541 |
@@ -140,7 +140,7 @@ This project will be updated everyday before Shanghai reopen. JSON files with pl
 
 ### District Total Cases
 
-|  |  浦东新区 |  黄浦区 |  静安区 |  徐汇区 |  长宁区 |  杨浦区 |  宝山区 |  闵行区 |  嘉定区 |  金山区 |  松江区 |  青浦区 |  奉贤区 |  闸北区 |  普陀区 |  虹口区 |  崇明区 |  
+| Date/District |  浦东新区 |  黄浦区 |  静安区 |  徐汇区 |  长宁区 |  杨浦区 |  宝山区 |  闵行区 |  嘉定区 |  金山区 |  松江区 |  青浦区 |  奉贤区 |  闸北区 |  普陀区 |  虹口区 |  崇明区 |  
 | ---- |  ---------- |  ---------- |  ---------- |  ---------- |  ---------- |  ---------- |  ---------- |  ---------- |  ---------- |  ---------- |  ---------- |  ---------- |  ---------- |  ---------- |  ---------- |  ---------- |  ---------- | 
 | 2022-03-19 |  135 |  36 |  15 |  61 |  12 |  14 |  17 |  53 |  81 |  3 |  16 |  5 |  6 |  0 |  0 |  0 |  0 |  
 | 2022-03-20 |  355 |  78 |  47 |  107 |  25 |  22 |  30 |  318 |  81 |  14 |  25 |  9 |  19 |  0 |  0 |  0 |  0 |  
