@@ -3306,13 +3306,6 @@
                 "富民街23号",
                 "西门北村"
             ]
-        },
-        {
-            "district_name":"闸北区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
-            "places":[]
         }
     ]
 }

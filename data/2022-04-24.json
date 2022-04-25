@@ -5272,13 +5272,6 @@
             "asymptomatic":68,
             "total":95,
             "places":[]
-        },
-        {
-            "district_name":"闸北区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
-            "places":[]
         }
     ]
 }

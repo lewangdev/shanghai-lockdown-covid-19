@@ -1999,13 +1999,6 @@
                 "丰产村",
                 "前江九队"
             ]
-        },
-        {
-            "district_name":"闸北区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
-            "places":[]
         }
     ]
 }
