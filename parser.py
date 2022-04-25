@@ -11,7 +11,7 @@ def parse_html_to_lines(filename: str):
     with open(filename, 'r') as f:
         html_content = f.read()
     soup = BeautifulSoup(html_content, 'html.parser')
-    span_elems = soup.select("#js_content section span")
+    span_elems = soup.select("#js_content p")
 
     if len(span_elems) == 0:
         span_elems = soup.select("#ivs_content p")

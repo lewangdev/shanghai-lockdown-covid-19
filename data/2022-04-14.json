@@ -4910,7 +4910,11 @@
             "confirmed":23,
             "asymptomatic":5,
             "total":28,
-            "addresses":[]
+            "addresses":[
+                "同凯路40弄",
+                "温河村",
+                "枫美路8678弄"
+            ]
         },
         {
             "district_name":"松江区",
@@ -5194,8 +5198,7 @@
             "asymptomatic":31,
             "total":31,
             "addresses":[
-                "江南大",
-                "道",
+                "江南大道",
                 "建筑工地",
                 "协隆村",
                 "长凯路128号",

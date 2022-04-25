@@ -4853,13 +4853,6 @@
             "confirmed":16,
             "asymptomatic":1,
             "total":17,
-            "addresses":[]
-        },
-        {
-            "district_name":"金山区",
-            "confirmed":16,
-            "asymptomatic":1,
-            "total":17,
             "addresses":[
                 "蒙山路1256号"
             ]

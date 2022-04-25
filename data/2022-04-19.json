@@ -4825,17 +4825,8 @@
             "confirmed":1,
             "asymptomatic":8,
             "total":9,
-            "addresses":[]
-        },
-        {
-            "district_name":"金山区",
-            "confirmed":1,
-            "asymptomatic":8,
-            "total":9,
             "addresses":[
                 "钱明村",
-                "钱明村",
-                "施二路74号",
                 "施二路74号"
             ]
         },
