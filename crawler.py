@@ -3,6 +3,7 @@ import json
 import hashlib
 import requests
 from bs4 import BeautifulSoup
+from util import read_file, write_file
 
 archived_html_dir = 'archived_html'
 urls_crawled_filename = f"{archived_html_dir}/urls.json"
@@ -14,16 +15,6 @@ def get_html_content(url):
     }
     r = requests.get(url, headers=headers)
     return r.text
-
-
-def write_file(content, filename):
-    with open(filename, 'w') as f:
-        f.write(content)
-
-
-def read_file(filename):
-    with open(filename, 'r') as f:
-        return f.read()
 
 
 def get_urls_crawled():
