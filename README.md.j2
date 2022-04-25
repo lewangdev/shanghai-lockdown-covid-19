@@ -6,7 +6,7 @@ This project, named with [shanghai-lockdown-covid-19](https://github.com/lewangd
 Shanghai is divided by Huangpu River into two parts, Pudong area and Puxi area. Pudong's lockdown began at 28/03/2022 firstly, and Puxi started its shutdown at 01/04/2022.
 Most of areas of Shanghai remain locked down till now(25/04/2022). 
 
-This project will be updated everyday before Shanghai reopen.
+This project will be updated everyday before Shanghai reopen. JSON files with places can be found in directory [data](https://github.com/lewangdev/shanghai-lockdown-covid-19/tree/main/data).
 
 
 ## Statistics
