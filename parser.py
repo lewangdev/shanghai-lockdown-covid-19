@@ -58,18 +58,29 @@ def parse_lines_to_json(lines):
     districts = []
     regex_total = "市卫健委(.*?)通报：(.*?)(\\d+)年(\\d+)月(\\d+)日(.*?)新增本土新冠肺炎确诊病例(\\d+)例(.*?)和无症状感染者(\\d+)例.*?"
     regex_district = "(\\d+)年(\\d+)月(\\d+)日，(.*?)新增.*?"
+
+    # a2c means asymptomatic to confirmed
+    regex_a2c = "(.*?)(\\d+)例确诊病例为此前无症状感染者转归.*?"
     pattern_total = re.compile(regex_total, re.IGNORECASE)
     pattern_district = re.compile(regex_district, re.IGNORECASE)
+    pattern_a2c = re.compile(regex_a2c, re.IGNORECASE)
     district_matched = None
     total_found = False
+    a2c_found = False
+    a2c = 0
     for line in lines:
+        a2c_match = pattern_a2c.match(line)
+        if not a2c_found and a2c_match is not None:
+            a2c_found = True
+            (_, a2c) = a2c_match.groups()
+
         total_match = pattern_total.match(line)
         if not total_found and total_match is not None:
             (_, _, y, m, d, _, confirmed, _, asymptomatic) = total_match.groups()
             total_found = True
             total = dict(
                 date=f"{y}-{m:0>2}-{d:0>2}", confirmed=int(confirmed), asymptomatic=int(asymptomatic),
-                total=int(confirmed)+int(asymptomatic)
+                total=int(confirmed)+int(asymptomatic), asymptomatic2confirmed=int(a2c)
             )
             continue
 
