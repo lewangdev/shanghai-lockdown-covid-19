@@ -7,7 +7,7 @@ SHANGHAI_DISTRICTS = {"浦东新区", "徐汇区", "长宁区", "静安区", "�
                       "虹口区", "杨浦区", "闵行区", "宝山区", "嘉定区", "松江区", "青浦区", "奉贤区", "金山区", "崇明区"}
 
 
-def parse_to_lines(filename: str):
+def parse_html_to_lines(filename: str):
     with open(filename, 'r') as f:
         html_content = f.read()
     soup = BeautifulSoup(html_content, 'html.parser')
@@ -53,7 +53,7 @@ def extract_cases(line: str):
     return 0, 0
 
 
-def get_json_data(lines):
+def parse_lines_to_json(lines):
     total = None
     districts = []
     regex_total = "市卫健委(.*?)通报：(.*?)(\\d+)年(\\d+)月(\\d+)日(.*?)新增本土新冠肺炎确诊病例(\\d+)例(.*?)和无症状感染者(\\d+)例.*?"
@@ -98,12 +98,12 @@ def get_json_data(lines):
     return total
 
 
-def get_json_data_from_file(filename: str):
-    lines = parse_to_lines(filename)
-    return get_json_data(lines)
+def parse_html_to_json(filename: str):
+    lines = parse_html_to_lines(filename)
+    return parse_lines_to_json(lines)
 
 
-def generate_data_from_urls(urls_filename: str):
+def generate_all_data(urls_filename: str):
     with open(urls_filename, 'r') as f:
         urls = json.load(f)
 
@@ -118,7 +118,7 @@ def generate_data_from_urls(urls_filename: str):
         filename = "archived_html/" + url['filename']
         print(f"Parse: {text}, filename: {filename}")
 
-        total = get_json_data_from_file(filename)
+        total = parse_html_to_json(filename)
         ret = json.dumps(total, ensure_ascii=False, indent=4,
                          separators=(',', ':'))
 
@@ -134,4 +134,4 @@ if __name__ == "__main__":
     # print(ret)
 
     urls_filename = "archived_html/urls.json"
-    generate_data_from_urls(urls_filename)
+    generate_all_data(urls_filename)
