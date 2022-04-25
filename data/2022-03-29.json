@@ -2177,6 +2177,13 @@
                 "大东村",
                 "庙镇大街1817号"
             ]
+        },
+        {
+            "district_name":"闸北区",
+            "confirmed":0,
+            "asymptomatic":0,
+            "total":0,
+            "places":[]
         }
     ]
 }

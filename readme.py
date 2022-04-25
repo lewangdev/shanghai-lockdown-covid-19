@@ -32,8 +32,6 @@ if __name__ == "__main__":
                      place_count=len(district['places'])))
             district_new_cases_dict[district_name] = district_new_cases
 
-    print(district_new_cases_dict)
-
     # Order by date
     cases_by_date = {}
     district_names = district_new_cases_dict.keys()
@@ -42,8 +40,6 @@ if __name__ == "__main__":
         for case in cases_by_district:
             cases_by_date[case["date"]] = cases_by_date.get(case["date"], [])
             cases_by_date[case["date"]].append(case)
-
-    print(cases_by_date)
 
     content = env.get_template(
         "README.md.j2").render(new_cases=sorted(new_cases, key=lambda x: x['date'], reverse=True),

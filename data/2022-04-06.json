@@ -5407,6 +5407,13 @@
                 "前哨公路42弄",
                 "春风村"
             ]
+        },
+        {
+            "district_name":"闸北区",
+            "confirmed":0,
+            "asymptomatic":0,
+            "total":0,
+            "places":[]
         }
     ]
 }

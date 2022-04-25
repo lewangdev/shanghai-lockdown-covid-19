@@ -107,6 +107,12 @@ def parse_lines_to_json(lines):
             if place != "" and place not in SHANGHAI_DISTRICTS:
                 district_matched['places'].append(place)
 
+    districts_found = map(lambda d: d['district_name'], districts)
+    districts_not_found = set(SHANGHAI_DISTRICTS) - set(districts_found)
+    for district_not_found in districts_not_found:
+        districts.append(dict(
+            district_name=district_not_found, confirmed=0, asymptomatic=0, total=0, places=[]))
+
     total['districts'] = districts
     return total
 
