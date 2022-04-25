@@ -80,7 +80,7 @@ def parse_lines_to_json(lines):
             total_found = True
             total = dict(
                 date=f"{y}-{m:0>2}-{d:0>2}", confirmed=int(confirmed), asymptomatic=int(asymptomatic),
-                total=int(confirmed)+int(asymptomatic), asymptomatic2confirmed=int(a2c)
+                total=int(confirmed)+int(asymptomatic)-int(a2c), asymptomatic_to_confirmed=int(a2c)
             )
             continue
 

@@ -2,8 +2,8 @@
     "date":"2022-04-03",
     "confirmed":425,
     "asymptomatic":8581,
-    "total":9006,
-    "asymptomatic2confirmed":71,
+    "total":8935,
+    "asymptomatic_to_confirmed":71,
     "districts":[
         {
             "district_name":"浦东新区",

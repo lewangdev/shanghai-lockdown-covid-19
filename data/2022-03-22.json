@@ -3,7 +3,7 @@
     "confirmed":4,
     "asymptomatic":977,
     "total":981,
-    "asymptomatic2confirmed":0,
+    "asymptomatic_to_confirmed":0,
     "districts":[
         {
             "district_name":"浦东新区",
