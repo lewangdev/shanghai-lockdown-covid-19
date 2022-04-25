@@ -2,6 +2,7 @@
 
 No entire COVID-19 statistics data of Shanghai lockdown period can be found in [JHU CSSE COVID-19 Data project](https://github.com/CSSEGISandData/COVID-19).
 This project crawled covid-19 data from [Shanghai Government](https://wsjkw.sh.gov.cn/yqtb/)'s public website, began at 19/03/2022, the date of my place lockdown.
+
 Shanghai is divided by Huangpu River into two parts, Pudong area and Puxi area. Pudong's lockdown began at 28/03/2022 firstly, and Puxi started its shutdown at 01/04/2022.
 Most of areas of Shanghai remain locked down till now(25/04/2022). 
 
