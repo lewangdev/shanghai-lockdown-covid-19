@@ -10,6 +10,7 @@ if __name__ == "__main__":
     env.trim_blocks = True
     env.lstrip_blocks = True
 
+    # Cases
     total = 0
     cases = []
     for new_case in new_cases:
@@ -33,9 +34,23 @@ if __name__ == "__main__":
 
     print(district_new_cases_dict)
 
+    # Order by date
+    cases_by_date = {}
+    district_names = district_new_cases_dict.keys()
+    for district_name in district_names:
+        cases_by_district = district_new_cases_dict[district_name]
+        for case in cases_by_district:
+            cases_by_date[case["date"]] = cases_by_date.get(case["date"], [])
+            cases_by_date[case["date"]].append(case)
+
+    print(cases_by_date)
+
     content = env.get_template(
         "README.md.j2").render(new_cases=sorted(new_cases, key=lambda x: x['date'], reverse=True),
-                               cases=sorted(cases, key=lambda x: x['date'], reverse=True))
+                               cases=sorted(
+                                   cases, key=lambda x: x['date'], reverse=True),
+                               cases_by_date=cases_by_date,
+                               district_names=district_names)
 
     with open("README.md", "w") as f:
         f.write(content)

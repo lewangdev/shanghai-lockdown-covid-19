@@ -33,6 +33,25 @@ This project will be updated everyday before Shanghai reopen.
 | {{case.date}} | {{case.total}} |
 {% endfor %}
 
+### District New Cases
+
+|  | {% for district_name in district_names %} {{district_name}} | {% endfor %} 
+| ---- | {% for district_name in district_names %} ---------- | {% endfor %}
+
+{% for date, cases in cases_by_date.items() %}
+| {{date}} | {% for case in cases %} {{case.new_case}} | {% endfor %} 
+{% endfor %}
+
+
+### District Total Cases
+
+|  | {% for district_name in district_names %} {{district_name}} | {% endfor %} 
+| ---- | {% for district_name in district_names %} ---------- | {% endfor %}
+
+{% for date, cases in cases_by_date.items() %}
+| {{date}} | {% for case in cases %} {{case.total}} | {% endfor %} 
+{% endfor %}
+
 ## Data Source
 
 * [Shanghai Municipal Health Commission's website](https://wsjkw.sh.gov.cn/yqtb/)
