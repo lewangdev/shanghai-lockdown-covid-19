@@ -2,6 +2,8 @@ import re
 import json
 from bs4 import BeautifulSoup
 
+from crawler import get_urls_crawled
+
 
 SHANGHAI_DISTRICTS = {"浦东新区", "徐汇区", "长宁区", "静安区", "普陀区", "黄浦区",
                       "虹口区", "杨浦区", "闵行区", "宝山区", "嘉定区", "松江区", "青浦区", "奉贤区", "金山区", "崇明区"}
@@ -122,10 +124,7 @@ def parse_html_to_json(filename: str):
     return parse_lines_to_json(lines)
 
 
-def generate_all_data(urls_filename: str):
-    with open(urls_filename, 'r') as f:
-        urls = json.load(f)
-
+def generate_json_files(urls):
     regex = "(.*?)月(\\d+)日（(.*?)时）本市各区确诊病例、无症状感染者居住地信息.*?"
     pattern = re.compile(regex, re.IGNORECASE)
     for url in urls:
@@ -152,5 +151,5 @@ if __name__ == "__main__":
     #                 indent = 4, separators = (',', ':'))
     # print(ret)
 
-    urls_filename = "archived_html/urls.json"
-    generate_all_data(urls_filename)
+    urls = get_urls_crawled()
+    generate_json_files(urls)

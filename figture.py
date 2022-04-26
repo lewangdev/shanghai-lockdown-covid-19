@@ -5,8 +5,7 @@ import numpy as np
 from util import get_data
 
 
-if __name__ == "__main__":
-
+def generate_figtures():
     new_cases = get_data()
     x = [new_case["date"].replace("2022-", "") for new_case in new_cases]
     y = [new_case["total"] for new_case in new_cases]
@@ -32,3 +31,7 @@ if __name__ == "__main__":
     plt.plot(x, y, color="red")
     plt.xticks(rotation=45)
     plt.savefig('figture/cases.png', format='png', dpi=300)
+
+
+if __name__ == "__main__":
+    generate_figtures()

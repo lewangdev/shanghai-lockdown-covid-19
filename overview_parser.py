@@ -1,6 +1,7 @@
 import re
 import json
 from bs4 import BeautifulSoup
+from crawler import get_urls_crawled
 
 
 def parse_html_to_lines(filename: str):
@@ -100,10 +101,7 @@ def parse_html_to_json(filename: str):
     return parse_lines_to_json(lines)
 
 
-def generate_all_data(urls_filename: str):
-    with open(urls_filename, 'r') as f:
-        urls = json.load(f)
-
+def generate_overview_json_files(urls):
     regex = "(.*?)月(\\d+)日(.*?)新增(.*?)确诊病例.*?"
     pattern = re.compile(regex, re.IGNORECASE)
     for url in urls:
@@ -139,5 +137,5 @@ def test_parse_html():
 if __name__ == "__main__":
     # test_parse_html()
 
-    urls_filename = "archived_html/urls.json"
-    generate_all_data(urls_filename)
+    urls = get_urls_crawled()
+    generate_overview_json_files(urls)

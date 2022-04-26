@@ -1,9 +1,9 @@
 from datetime import datetime
-from wsgiref.simple_server import demo_app
 from jinja2 import Environment, FileSystemLoader
 from util import get_data, get_overview_data
 
-if __name__ == "__main__":
+
+def generate_readme_file():
     # Get data
     overview_data = get_overview_data()
     new_cases = get_data()
@@ -57,3 +57,7 @@ if __name__ == "__main__":
 
     with open("README.md", "w") as f:
         f.write(content)
+
+
+if __name__ == "__main__":
+    generate_readme_file()
