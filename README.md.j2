@@ -27,10 +27,10 @@ This project will be updated everyday before Shanghai reopen. JSON files with pl
 
 ![Cases](https://github.com/lewangdev/shanghai-lockdown-covid-19/blob/main/figture/cases.png?raw=true)
 
-| Date | Total Cases  | Total Deaths | 
-| ---- | ---------- | ---------- |
+| Date | Total Cases  | Total Deaths | Case‑Fatality |
+| ---- | ---------- | ---------- | ---------- |
 {% for case in cases %}
-| {{case.date}} | {{case.total}} | {{case.deaths}} |
+| {{case.date}} | {{case.total}} | {{case.deaths}} | {{"%.4f"|format(case.deaths/case.total * 100)}}% |
 {% endfor %}
 
 ### District New Cases
