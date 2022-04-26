@@ -1,3 +1,4 @@
+from datetime import datetime
 from jinja2 import Environment, FileSystemLoader
 from util import get_data
 
@@ -46,7 +47,8 @@ if __name__ == "__main__":
                                cases=sorted(
                                    cases, key=lambda x: x['date'], reverse=True),
                                cases_by_date=cases_by_date,
-                               district_names=district_names)
+                               district_names=district_names,
+                               current_date=datetime.now().strftime("%d/%m/%Y"))
 
     with open("README.md", "w") as f:
         f.write(content)

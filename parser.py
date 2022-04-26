@@ -126,7 +126,7 @@ def generate_all_data(urls_filename: str):
     with open(urls_filename, 'r') as f:
         urls = json.load(f)
 
-    regex = "(\\d+)月(\\d+)日（(.*?)时）本市各区确诊病例、无症状感染者居住地信息.*?"
+    regex = "(.*?)月(\\d+)日（(.*?)时）本市各区确诊病例、无症状感染者居住地信息.*?"
     pattern = re.compile(regex, re.IGNORECASE)
     for url in urls:
         text = url['text']
