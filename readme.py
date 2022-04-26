@@ -1,9 +1,11 @@
 from datetime import datetime
+from wsgiref.simple_server import demo_app
 from jinja2 import Environment, FileSystemLoader
-from util import get_data
+from util import get_data, get_overview_data
 
 if __name__ == "__main__":
     # Get data
+    overview_data = get_overview_data()
     new_cases = get_data()
 
     # Init jinja2
@@ -13,10 +15,13 @@ if __name__ == "__main__":
 
     # Cases
     total = 0
+    deaths = 0
     cases = []
     for new_case in new_cases:
+        new_case['deaths'] = overview_data[new_case['date']]['deaths']
         total = new_case["total"] + total
-        cases.append(dict(date=new_case["date"], total=total))
+        deaths = new_case['deaths'] + deaths
+        cases.append(dict(date=new_case["date"], total=total, deaths=deaths))
 
     # District data
     district_new_cases_dict = {}

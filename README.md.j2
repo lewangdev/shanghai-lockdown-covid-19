@@ -15,10 +15,10 @@ This project will be updated everyday before Shanghai reopen. JSON files with pl
 
 ![New cases](https://github.com/lewangdev/shanghai-lockdown-covid-19/blob/main/figture/new-cases.png?raw=true)
 
-| Date/Details | New Cases  | Confirmed Cases | Asymptomatic Cases | A2C Cases(*) |
-| ---- | ---------- | ---------------- | ----------------- | ---------------------------- |
+| Date/Details | New Cases  | Deaths | Confirmed Cases | Asymptomatic Cases | A2C Cases(*) |
+| ---- | ---------- | ---------- | ---------------- | ----------------- | ---------------------------- |
 {%for new_case in new_cases %}
-| {{new_case.date}} | {{new_case.total}} | {{new_case.confirmed}} | {{new_case.asymptomatic}} | {{new_case.asymptomatic_to_confirmed}} |
+| {{new_case.date}} | {{new_case.total}} | {{new_case.deaths}} | {{new_case.confirmed}} | {{new_case.asymptomatic}} | {{new_case.asymptomatic_to_confirmed}} |
 {% endfor %}
 
 * A2C Cases: Asymptomatic cases that are confirmed.
@@ -27,10 +27,10 @@ This project will be updated everyday before Shanghai reopen. JSON files with pl
 
 ![Cases](https://github.com/lewangdev/shanghai-lockdown-covid-19/blob/main/figture/cases.png?raw=true)
 
-| Date | Total Cases  | 
-| ---- | ---------- |
+| Date | Total Cases  | Total Deaths | 
+| ---- | ---------- | ---------- |
 {% for case in cases %}
-| {{case.date}} | {{case.total}} |
+| {{case.date}} | {{case.total}} | {{case.deaths}} |
 {% endfor %}
 
 ### District New Cases
