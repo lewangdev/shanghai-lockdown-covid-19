@@ -18,7 +18,11 @@ def generate_readme_file():
     deaths = 0
     cases = []
     for new_case in new_cases:
-        new_case['deaths'] = overview_data[new_case['date']]['deaths']
+        if overview_data.get(new_case['date']) is None:
+            new_case['deaths'] = 0
+        else:
+            new_case['deaths'] = overview_data[new_case['date']].get(
+                'deaths', 0)
         total = new_case["total"] + total
         deaths = new_case['deaths'] + deaths
         cases.append(dict(date=new_case["date"], total=total, deaths=deaths))
