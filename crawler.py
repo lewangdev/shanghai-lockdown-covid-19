@@ -61,10 +61,30 @@ def crawl(pages, urls_crawled):
     return urls
 
 
+def crawl_url(target_url, text):
+    urls = []
+    hyperlink_html_content = get_html_content(target_url)
+    hashname = hashlib.md5(
+        hyperlink_html_content.encode('utf8')).hexdigest()
+    filename = f"{hashname}.html"
+    urls.append(
+        {"url": target_url, "text": text, "filename": filename})
+
+    write_file(hyperlink_html_content,
+               f"{archived_html_dir}/{filename}")
+    return urls
+
+
 if __name__ == '__main__':
     # pages = ['', "_1", "_2", "_3", "_4", "_5", "_6"]
-    pages = ['']
+    # pages = ['']
+    # urls_crawled = get_urls_crawled()
+    # urls = crawl(pages, urls_crawled)
+    # urls.extend(urls_crawled)
+    # save_urls_crawled(urls)
+    url = "https://mp.weixin.qq.com/s/zH8lKAD_P6ykUzNLfrrtQg"
+    text = "4月26日（0-24时）上海新增1606例本土新冠肺炎确诊病例，新增11956例本土无症状感染者"
     urls_crawled = get_urls_crawled()
-    urls = crawl(pages, urls_crawled)
+    urls = crawl_url(url, text)
     urls.extend(urls_crawled)
     save_urls_crawled(urls)

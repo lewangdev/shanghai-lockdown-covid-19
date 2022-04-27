@@ -14,7 +14,7 @@ This project will be updated every day before Shanghai reopens. JSON files with 
 
 | Date/Details | New Cases  | Deaths | Confirmed Cases | Asymptomatic Cases | A2C Cases(*) |
 | ---- | ---------- | ---------- | ---------------- | ----------------- | ---------------------------- |
-| 2022-04-26 | 12309 | 0 | 1606 | 11956 | 1253 |
+| 2022-04-26 | 12309 | 48 | 1606 | 11956 | 1253 |
 | 2022-04-25 | 16012 | 52 | 1661 | 15319 | 968 |
 | 2022-04-24 | 18609 | 51 | 2472 | 16983 | 846 |
 | 2022-04-23 | 20517 | 39 | 1401 | 19657 | 541 |
@@ -62,7 +62,7 @@ This project will be updated every day before Shanghai reopens. JSON files with 
 
 | Date | Total Cases  | Total Deaths | Case‑Fatality |
 | ---- | ---------- | ---------- | ---------- |
-| 2022-04-26 | 534733 | 165 | 0.0309% |
+| 2022-04-26 | 534733 | 213 | 0.0398% |
 | 2022-04-25 | 522424 | 165 | 0.0316% |
 | 2022-04-24 | 506412 | 113 | 0.0223% |
 | 2022-04-23 | 487803 | 62 | 0.0127% |
