@@ -23,8 +23,9 @@ def parse_html_to_lines(filename: str):
 
 
 def extract_cases(line: str):
+    # '市卫健委今早（28日）通报：2022年4月27日0—24时，新增本土新冠肺炎确诊病例1292（含既往无症状感染者转为确诊病例858例）和无症状感染者9330例，432例确诊病例和9140例无症状感染者在隔离管控中发现，其余在相关风险人群排查中发现。无新增境外输入性新冠肺炎确诊病例和无症状感染者。'
     found = False
-    regex1 = ".*市卫健委(.*?)通报：(.*?)(\\d+)年(\\d+)月(\\d+)日(.*?)新增本土新冠肺炎确诊病例(\\d+)例(.*?)和无症状感染者(\\d+)例.*?"
+    regex1 = ".*市卫健委(.*?)通报：(.*?)(\\d+)年(\\d+)月(\\d+)日(.*?)新增本土新冠肺炎确诊病例(\\d+)(.*?)和无症状感染者(\\d+)例.*?"
     m1 = re.match(regex1, line, re.IGNORECASE)
     if not found and m1 is not None:
         (_, _, y, m, d, _, confirmed, _, asymptomatic) = m1.groups()
