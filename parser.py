@@ -55,26 +55,39 @@ def extract_cases(line: str):
     return 0, 0
 
 
+def extract_a2c(line: str):
+    regex_a2c = "(.*?)(\\d+)例确诊病例为此前无症状感染者转归.*?"
+    a2c = 0
+    a2c_match = re.match(regex_a2c, line, re.IGNORECASE)
+    if a2c_match is not None:
+        (_, a2c) = a2c_match.groups()
+        return True, int(a2c)
+
+    regex_a2c2 = "(.*?)含既往无症状感染者转为确诊病例(\\d+)例.*?"
+    a2c_match2 = re.match(regex_a2c2, line, re.IGNORECASE)
+    if a2c_match2 is not None:
+        (_, a2c) = a2c_match2.groups()
+        return True, int(a2c)
+
+    return False, 0
+
+
 def parse_lines_to_json(lines):
     total = None
     districts = []
-    regex_total = "市卫健委(.*?)通报：(.*?)(\\d+)年(\\d+)月(\\d+)日(.*?)新增本土新冠肺炎确诊病例(\\d+)例(.*?)和无症状感染者(\\d+)例.*?"
+    regex_total = "市卫健委(.*?)通报：(.*?)(\\d+)年(\\d+)月(\\d+)日(.*?)新增本土新冠肺炎确诊病例(\\d+)(.*?)和无症状感染者(\\d+)例.*?"
     regex_district = "(\\d+)年(\\d+)月(\\d+)日，(.*?)新增.*?"
 
-    # a2c means asymptomatic to confirmed
-    regex_a2c = "(.*?)(\\d+)例确诊病例为此前无症状感染者转归.*?"
     pattern_total = re.compile(regex_total, re.IGNORECASE)
     pattern_district = re.compile(regex_district, re.IGNORECASE)
-    pattern_a2c = re.compile(regex_a2c, re.IGNORECASE)
     district_matched = None
     total_found = False
+    # a2c means asymptomatic to confirmed
     a2c_found = False
     a2c = 0
     for line in lines:
-        a2c_match = pattern_a2c.match(line)
-        if not a2c_found and a2c_match is not None:
-            a2c_found = True
-            (_, a2c) = a2c_match.groups()
+        if not a2c_found:
+            (a2c_found, a2c) = extract_a2c(line)
 
         total_match = pattern_total.match(line)
         if not total_found and total_match is not None:
@@ -145,11 +158,13 @@ def generate_json_files(urls):
 
 
 if __name__ == "__main__":
-    # filename = "archived_html/67563db6c3ddc415a9d99abbe806efba.html"
-    # total = get_json_data_from_file(filename)
-    # ret = json.dumps(total, ensure_ascii=False,
-    #                 indent = 4, separators = (',', ':'))
-    # print(ret)
+    filename = "archived_html/54920aa661ffa8f89bbcbe07e0a1dc30.html"
+    total = parse_html_to_json(filename)
+    ret = json.dumps(total, ensure_ascii=False,
+                     indent=4, separators=(',', ':'))
+    with open(f"data/{total['date']}.json", 'w') as f:
+        f.write(ret)
+    print(ret)
 
-    urls = get_urls_crawled()
-    generate_json_files(urls)
+    # urls = get_urls_crawled()
+    # generate_json_files(urls)

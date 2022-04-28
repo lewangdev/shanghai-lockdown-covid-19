@@ -77,14 +77,14 @@ def crawl_url(target_url, text):
 
 if __name__ == '__main__':
     # pages = ['', "_1", "_2", "_3", "_4", "_5", "_6"]
-    pages = ['']
-    urls_crawled = get_urls_crawled()
-    urls = crawl(pages, urls_crawled)
-    urls.extend(urls_crawled)
-    save_urls_crawled(urls)
-    # url = "https://mp.weixin.qq.com/s/zH8lKAD_P6ykUzNLfrrtQg"
-    # text = "4月26日（0-24时）上海新增1606例本土新冠肺炎确诊病例，新增11956例本土无症状感染者"
+    # pages = ['']
     # urls_crawled = get_urls_crawled()
-    # urls = crawl_url(url, text)
+    # urls = crawl(pages, urls_crawled)
     # urls.extend(urls_crawled)
     # save_urls_crawled(urls)
+    url = "https://mp.weixin.qq.com/s/SKkU2W-Ic1H_qWnYC9NtXA"
+    text = "4月27日（0-24时）本市各区确诊病例、无症状感染者居住地信息"
+    urls_crawled = get_urls_crawled()
+    urls = crawl_url(url, text)
+    urls.extend(urls_crawled)
+    save_urls_crawled(urls)
