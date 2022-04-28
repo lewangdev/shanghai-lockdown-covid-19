@@ -56,6 +56,12 @@ def extract_a2c(line: str):
         (_, a2c) = a2c_match.groups()
         return True, int(a2c)
 
+    regex_a2c2 = "(.*?)含既往无症状感染者转为确诊病例(\\d+)例.*?"
+    a2c_match2 = re.match(regex_a2c2, line, re.IGNORECASE)
+    if a2c_match2 is not None:
+        (_, a2c) = a2c_match2.groups()
+        return True, int(a2c)
+
     return False, 0
 
 
@@ -128,7 +134,7 @@ def generate_overview_json_files(urls):
 
 
 def test_parse_html():
-    filename = "archived_html/43404b256b70d57b662e12d96b9ab53d.html "
+    filename = "archived_html/73a04ffe4e02c964469c465c72d3d65a.html"
     total = parse_html_to_json(filename)
     ret = json.dumps(total, ensure_ascii=False,
                      indent=4, separators=(',', ':'))
