@@ -56,7 +56,7 @@ def extract_cases(line: str):
 
 
 def extract_a2c(line: str):
-    regex_a2c = "(.*?)(\\d+)例确诊病例为此前无症状感染者转归.*?"
+    regex_a2c = "(.*?)(\\d+)例确诊病例(.*?)无症状感染者转归.*?"
     a2c = 0
     a2c_match = re.match(regex_a2c, line, re.IGNORECASE)
     if a2c_match is not None:
