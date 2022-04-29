@@ -2,7 +2,7 @@
     "date":"2022-04-28",
     "confirmed":5487,
     "asymptomatic":9545,
-    "total":15032,
-    "asymptomatic_to_confirmed":0,
-    "deaths":0
+    "total":9970,
+    "asymptomatic_to_confirmed":5062,
+    "deaths":52
 }
