@@ -60,7 +60,7 @@ def extract_a2c(line: str):
     a2c = 0
     a2c_match = re.match(regex_a2c, line, re.IGNORECASE)
     if a2c_match is not None:
-        (_, a2c) = a2c_match.groups()
+        (_, a2c, _) = a2c_match.groups()
         return True, int(a2c)
 
     regex_a2c2 = "(.*?)含既往无症状感染者转为确诊病例(\\d+)例.*?"
