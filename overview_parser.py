@@ -49,11 +49,12 @@ def extract_cases(line: str):
 
 
 def extract_a2c(line: str):
-    regex_a2c = "(.*?)(\\d+)例确诊病例为此前无症状感染者转归.*?"
+    # 其中5062例确诊病例为既往无症状感染者转归
+    regex_a2c = "(.*?)(\\d+)例确诊病例(.*?)无症状感染者转归.*?"
     a2c = 0
     a2c_match = re.match(regex_a2c, line, re.IGNORECASE)
     if a2c_match is not None:
-        (_, a2c) = a2c_match.groups()
+        (_, a2c, _) = a2c_match.groups()
         return True, int(a2c)
 
     regex_a2c2 = "(.*?)含既往无症状感染者转为确诊病例(\\d+)例.*?"
@@ -134,7 +135,7 @@ def generate_overview_json_files(urls):
 
 
 def test_parse_html():
-    filename = "archived_html/73a04ffe4e02c964469c465c72d3d65a.html"
+    filename = "archived_html/221e6e50a84c1a9700e3caedc8982440.html"
     total = parse_html_to_json(filename)
     ret = json.dumps(total, ensure_ascii=False,
                      indent=4, separators=(',', ':'))
