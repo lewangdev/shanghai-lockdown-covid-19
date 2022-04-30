@@ -27,7 +27,7 @@ def get_overview_data():
     new_cases = {}
     filenames = filter(lambda x: x.endswith("json"),
                        os.listdir("./data/overview"))
-    sorted_filenames = sorted(filenames)
+    sorted_filenames = sorted(filenames)[13:]
     for filename in sorted_filenames:
         case_by_date = json.loads(open(f"./data/overview/{filename}").read())
         new_cases[case_by_date['date']] = case_by_date

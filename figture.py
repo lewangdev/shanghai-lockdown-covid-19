@@ -1,13 +1,13 @@
 import matplotlib.pyplot as plt
 
-from util import get_data
+from util import get_overview_data
 
 
 def generate_figtures():
-    new_cases = get_data()
+    new_cases = get_overview_data().values()
     x = [new_case["date"].replace("2022-", "") for new_case in new_cases]
     y = [new_case["total"] for new_case in new_cases]
-    plt.figure(figsize=(12, 5))
+    plt.figure(figsize=(16, 5))
     plt.xlabel("Date")
     plt.ylabel("Cases")
     plt.grid(True, axis="y")
@@ -22,7 +22,7 @@ def generate_figtures():
         cases.append(dict(date=new_case["date"], total=total))
     x = [case["date"].replace("2022-", "") for case in cases]
     y = [case["total"] for case in cases]
-    plt.figure(figsize=(12, 5))
+    plt.figure(figsize=(16, 5))
     plt.xlabel("Date")
     plt.ylabel("Cases")
     plt.grid(True, axis="y")

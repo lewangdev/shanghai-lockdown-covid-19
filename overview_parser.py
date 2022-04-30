@@ -81,6 +81,7 @@ def parse_lines_to_json(lines):
     a2c_found = False
     deaths_found = False
     found = False
+    recalc = True
     a2c = 0
     deaths = 0
     ret = {"deaths": 0, "confirmed": 0,
@@ -95,11 +96,12 @@ def parse_lines_to_json(lines):
             (found, ret) = extract_cases(line)
             ret['asymptomatic_to_confirmed'] = a2c
             ret['deaths'] = deaths
-        if found and deaths_found and a2c_found:
+        if found and a2c_found and recalc:
             ret['total'] = ret['total'] - a2c
             ret['asymptomatic_to_confirmed'] = a2c
+            recalc = False
+        if deaths_found:
             ret['deaths'] = deaths
-            return ret
 
     return ret
 
