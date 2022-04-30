@@ -23,6 +23,20 @@ DISTRICT_CODES = {
 }
 
 geo_cached_filename = "data/place/geo_cached.json"
+places_filename = "data/place/places.json"
+key = os.environ.get("AMAP_KEY")
+
+
+def get_places():
+    # if os.path.exists(places_filename):
+    #     return json.loads(read_file(places_filename))
+
+    return []
+
+
+def save_places(places):
+    write_file(json.dumps(places, ensure_ascii=False, indent=4,
+               separators=(',', ':')), places_filename)
 
 
 def get_geo_cached():
@@ -32,7 +46,12 @@ def get_geo_cached():
     return {}
 
 
-def geocode_geo(key, district_code, address):
+def save_geo_cached(geo_cached):
+    write_file(json.dumps(geo_cached, ensure_ascii=False, indent=4,
+               separators=(',', ':')), geo_cached_filename)
+
+
+def geocode_geo(district_code, address):
     """
     Geocode an address using the Geo API
     """
@@ -51,28 +70,34 @@ def geocode_geo(key, district_code, address):
         return False, 0, 0
 
 
-if __name__ == "__main__":
-    key = os.environ.get("AMAP_KEY")
-
-    cases = get_data()
+def generate_places(cases=[]):
     geo_cached = get_geo_cached()
+    places = get_places()
     for case in cases:
         date = case["date"]
         districts = case["districts"]
         for district in districts:
             district_name = district["district_name"]
             print(f"\n{district_name}@{date}:")
-            for place in district["places"]:
-                if place in geo_cached:
-                    point = geo_cached[place]
+            for place_name in district["places"]:
+                if place_name in geo_cached:
+                    point = geo_cached[place_name]
                     lng = point["lng"]
                     lat = point["lat"]
                 else:
                     (ret, lng, lat) = geocode_geo(
-                        key, DISTRICT_CODES[district_name], place)
+                        DISTRICT_CODES[district_name], place_name)
                     if ret:
-                        geo_cached[place] = dict(lng=lng, lat=lat)
-                print(f"{place}: {lng},{lat}")
+                        geo_cached[place_name] = dict(lng=lng, lat=lat)
+                place = dict(date=date, district_name=district_name,
+                             place_name=place_name, lng=lng, lat=lat)
+                places.append(place)
+                print(place)
 
-    write_file(json.dumps(geo_cached, ensure_ascii=False, indent=4,
-               separators=(',', ':')), geo_cached_filename)
+    save_geo_cached(geo_cached)
+    save_places(places)
+
+
+if __name__ == "__main__":
+    cases = get_data()
+    generate_places(cases)
