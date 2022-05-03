@@ -499,9 +499,9 @@
         },
         {
             "district_name":"嘉定区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":2,
+            "asymptomatic":109,
+            "total":111,
             "places":[
                 "安虹路299弄",
                 "墨玉路388弄",

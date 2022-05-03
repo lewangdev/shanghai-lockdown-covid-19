@@ -1976,9 +1976,9 @@
         },
         {
             "district_name":"嘉定区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":9,
+            "asymptomatic":191,
+            "total":200,
             "places":[
                 "云屏路1399弄",
                 "海波路850弄",
@@ -4427,9 +4427,9 @@
         },
         {
             "district_name":"嘉定区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":9,
+            "asymptomatic":191,
+            "total":200,
             "places":[
                 "云屏路1399弄",
                 "海波路850弄",

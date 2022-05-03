@@ -2588,9 +2588,9 @@
         },
         {
             "district_name":"嘉定区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":26,
+            "asymptomatic":591,
+            "total":617,
             "places":[
                 "宝安公路4259号",
                 "宝安公路5063号",

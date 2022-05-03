@@ -1194,9 +1194,9 @@
         },
         {
             "district_name":"嘉定区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":3,
+            "asymptomatic":248,
+            "total":251,
             "places":[
                 "华江支路677弄",
                 "阜康西路19弄",

@@ -859,9 +859,9 @@
         },
         {
             "district_name":"静安区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":20,
+            "asymptomatic":596,
+            "total":616,
             "places":[
                 "安远路891号",
                 "宝昌路610弄",
@@ -1321,9 +1321,9 @@
         },
         {
             "district_name":"虹口区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":18,
+            "asymptomatic":348,
+            "total":366,
             "places":[
                 "安汾路780弄",
                 "安国路18号",

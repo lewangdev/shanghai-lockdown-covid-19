@@ -5739,9 +5739,9 @@
         },
         {
             "district_name":"崇明区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":6,
+            "asymptomatic":51,
+            "total":57,
             "places":[
                 "江南大道",
                 "丰康路50弄",
