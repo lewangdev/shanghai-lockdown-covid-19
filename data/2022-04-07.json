@@ -4674,9 +4674,9 @@
         },
         {
             "district_name":"松江区",
-            "confirmed":0,
+            "confirmed":107,
             "asymptomatic":644,
-            "total":644,
+            "total":751,
             "places":[
                 "百鸟村",
                 "伴亭路218弄",
@@ -5189,9 +5189,9 @@
         },
         {
             "district_name":"崇明区",
-            "confirmed":0,
+            "confirmed":2,
             "asymptomatic":260,
-            "total":260,
+            "total":262,
             "places":[
                 "骏马村",
                 "前卫支路171号",

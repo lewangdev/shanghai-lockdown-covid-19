@@ -3399,9 +3399,9 @@
         },
         {
             "district_name":"松江区",
-            "confirmed":0,
+            "confirmed":6,
             "asymptomatic":553,
-            "total":553,
+            "total":559,
             "places":[
                 "伴亭路855弄",
                 "北厍路116号",

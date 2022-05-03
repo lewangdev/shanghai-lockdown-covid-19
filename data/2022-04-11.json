@@ -5381,9 +5381,9 @@
         },
         {
             "district_name":"松江区",
-            "confirmed":0,
+            "confirmed":21,
             "asymptomatic":670,
-            "total":670,
+            "total":691,
             "places":[
                 "白粮路189弄",
                 "伴亭路500号",

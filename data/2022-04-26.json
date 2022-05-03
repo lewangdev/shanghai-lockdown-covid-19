@@ -3943,9 +3943,9 @@
         },
         {
             "district_name":"奉贤区",
-            "confirmed":0,
+            "confirmed":2,
             "asymptomatic":11,
-            "total":11,
+            "total":13,
             "places":[
                 "海旗路1518号",
                 "沪杭公路66弄",
@@ -3956,9 +3956,9 @@
         },
         {
             "district_name":"崇明区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":14,
+            "asymptomatic":453,
+            "total":467,
             "places":[
                 "江南大道",
                 "长凯路128号"

@@ -28,7 +28,7 @@ def parse_html_to_lines(filename: str):
 
 
 def extract_cases(line: str):
-    regex1 = "(\\d+)年(\\d+)月(\\d+)日，(.*?)新增(\\d+)例本土(.*?)确诊病例(.*?)新增(\\d+)例(.*?)无症状感染者.*?"
+    regex1 = "(\\d+)年(\\d+)月(\\d+)日，(.*?)新增(\\d+)例(.*?)病例(.*?)新增(\\d+)例(.*?)无症状感染者.*?"
     m1 = re.match(regex1, line, re.IGNORECASE)
     if m1 is not None:
         (_, _, _, _, confirmed, _, _, asymptomatic, _) = m1.groups()
@@ -158,13 +158,20 @@ def generate_json_files(urls):
 
 
 if __name__ == "__main__":
-    filename = "archived_html/e57f746f6f2e8fc07c3d621d73d17fd1.html"
-    total = parse_html_to_json(filename)
-    ret = json.dumps(total, ensure_ascii=False,
-                     indent=4, separators=(',', ':'))
-    with open(f"data/{total['date']}.json", 'w') as f:
-        f.write(ret)
-    print(ret)
+    # filename = "archived_html/e57f746f6f2e8fc07c3d621d73d17fd1.html"
+    # total = parse_html_to_json(filename)
+    # ret = json.dumps(total, ensure_ascii=False,
+    #                  indent=4, separators=(',', ':'))
+    # with open(f"data/{total['date']}.json", 'w') as f:
+    #     f.write(ret)
+    # print(ret)
 
     # urls = get_urls_crawled()
     # generate_json_files(urls)
+
+    ss = ["2022年4月26日，崇明区新增14例新冠肺炎本土确诊病例，其中12例居住于闭环管理的建筑工地；新增453例无症状感染者，其中447例居住于闭环管理的建筑工地。其余分别居住于：",
+          "2022年4月26日，奉贤区新增2例本土新冠病例，新增11例本土无症状感染者。上述病例均在隔离管控中发现，分别居住于："]
+
+    for s in ss:
+        print(s)
+        print(extract_cases(s))

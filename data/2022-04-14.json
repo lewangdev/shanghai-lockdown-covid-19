@@ -4919,9 +4919,9 @@
         },
         {
             "district_name":"松江区",
-            "confirmed":0,
+            "confirmed":178,
             "asymptomatic":583,
-            "total":583,
+            "total":761,
             "places":[
                 "安乐街106号",
                 "庵前小区",
@@ -5195,9 +5195,9 @@
         },
         {
             "district_name":"崇明区",
-            "confirmed":0,
+            "confirmed":29,
             "asymptomatic":31,
-            "total":31,
+            "total":60,
             "places":[
                 "江南大道",
                 "建筑工地",

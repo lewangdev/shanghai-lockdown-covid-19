@@ -4570,9 +4570,9 @@
         },
         {
             "district_name":"奉贤区",
-            "confirmed":0,
+            "confirmed":3,
             "asymptomatic":9,
-            "total":9,
+            "total":12,
             "places":[
                 "解放西路639弄",
                 "金星村",
@@ -4581,9 +4581,9 @@
         },
         {
             "district_name":"崇明区",
-            "confirmed":0,
+            "confirmed":36,
             "asymptomatic":438,
-            "total":438,
+            "total":474,
             "places":[]
         }
     ]

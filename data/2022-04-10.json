@@ -5771,9 +5771,9 @@
         },
         {
             "district_name":"松江区",
-            "confirmed":0,
+            "confirmed":291,
             "asymptomatic":1534,
-            "total":1534,
+            "total":1825,
             "places":[
                 "伴亭路500号",
                 "伴亭路855弄",

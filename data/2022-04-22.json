@@ -5431,9 +5431,9 @@
         },
         {
             "district_name":"崇明区",
-            "confirmed":0,
+            "confirmed":14,
             "asymptomatic":103,
-            "total":103,
+            "total":117,
             "places":[]
         }
     ]

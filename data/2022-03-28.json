@@ -1859,9 +1859,9 @@
         },
         {
             "district_name":"松江区",
-            "confirmed":0,
+            "confirmed":4,
             "asymptomatic":90,
-            "total":90,
+            "total":94,
             "places":[
                 "仓丰路1153弄",
                 "仓丰路855弄",

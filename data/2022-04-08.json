@@ -5340,9 +5340,9 @@
         },
         {
             "district_name":"松江区",
-            "confirmed":0,
+            "confirmed":108,
             "asymptomatic":663,
-            "total":663,
+            "total":771,
             "places":[
                 "安乐街106号",
                 "白云新村",
@@ -5778,9 +5778,9 @@
         },
         {
             "district_name":"崇明区",
-            "confirmed":0,
+            "confirmed":3,
             "asymptomatic":167,
-            "total":167,
+            "total":170,
             "places":[
                 "江南大道",
                 "南海村",

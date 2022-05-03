@@ -2953,9 +2953,9 @@
         },
         {
             "district_name":"松江区",
-            "confirmed":0,
+            "confirmed":6,
             "asymptomatic":257,
-            "total":257,
+            "total":263,
             "places":[
                 "宝益路255号",
                 "北松公路4805弄",
