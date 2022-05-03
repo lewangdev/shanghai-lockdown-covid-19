@@ -217,6 +217,44 @@
             ]
         },
         {
+            "district_name":"普陀区",
+            "confirmed":0,
+            "asymptomatic":25,
+            "total":25,
+            "places":[
+                "东新路99弄",
+                "平利路21弄",
+                "白玉新村",
+                "志丹路500弄",
+                "万泉路122弄",
+                "宜川四村",
+                "枣阳路465弄",
+                "古浪路55弄",
+                "南大街东江海小区",
+                "真北路3725弄",
+                "甘泉路5弄",
+                "曹杨二村",
+                "桂巷新村",
+                "白丽路701弄",
+                "中山北路2655弄",
+                "中山北路2451弄",
+                "中华新路1140弄"
+            ]
+        },
+        {
+            "district_name":"虹口区",
+            "confirmed":0,
+            "asymptomatic":0,
+            "total":0,
+            "places":[
+                "广中路680弄",
+                "广灵四路280弄",
+                "四川北路1545号",
+                "四川北路1906弄",
+                "逸仙路288弄"
+            ]
+        },
+        {
             "district_name":"杨浦区",
             "confirmed":0,
             "asymptomatic":14,
@@ -384,25 +422,13 @@
             ]
         },
         {
-            "district_name":"虹口区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
-            "places":[]
-        },
-        {
             "district_name":"崇明区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
-            "places":[]
-        },
-        {
-            "district_name":"普陀区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
-            "places":[]
+            "confirmed":1,
+            "asymptomatic":22,
+            "total":23,
+            "places":[
+                "崇明区江南大道"
+            ]
         }
     ]
 }

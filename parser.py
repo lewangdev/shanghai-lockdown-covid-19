@@ -46,16 +46,16 @@ def extract_cases(line: str):
         (_, _, _, _, _, confirmed, _, asymptomatic) = m3.groups()
         return (int(confirmed), int(asymptomatic))
 
-    regex4 = "(\\d+)年(\\d+)月(\\d+)日，(.*?)新增(\\d+)例(.*?)确诊病例(、|，|和)(\\d+)例(.*?)无症状感染者.*?"
+    regex4 = "(\\d+)年(\\d+)月(\\d+)日(.*?)，(.*?)新增(\\d+)例(.*?)确诊病例(、|，|和)(\\d+)例(.*?)无症状感染者.*?"
     m4 = re.match(regex4, line, re.IGNORECASE)
     if m4 is not None:
-        (_, _, _, _, confirmed, _, _, asymptomatic, _) = m4.groups()
+        (_, _, _, _, _, confirmed, _, _, asymptomatic, _) = m4.groups()
         return (int(confirmed), int(asymptomatic))
 
-    regex5 = "(\\d+)年(\\d+)月(\\d+)日，(.*?)无新增(.*?)本土(.*?)确诊病例(、|，|和)(.*?)(\\d+)例(.*?)无症状感染者.*?"
+    regex5 = "(\\d+)年(\\d+)月(\\d+)日(.*?)，(.*?)无新增(.*?)本土(.*?)确诊病例(、|，|和)(.*?)(\\d+)例(.*?)无症状感染者.*?"
     m5 = re.match(regex5, line, re.IGNORECASE)
     if m5 is not None:
-        (_, _, _, _, _, _, _, _, asymptomatic, _) = m5.groups()
+        (_, _, _, _, _, _, _, _, _, asymptomatic, _) = m5.groups()
         return (0, int(asymptomatic))
 
     regex6 = "(\\d+)月(\\d+)日，(.*?)新增(\\d+)例(.*?)确诊病例(、|，|和)(.*?)(\\d+)例(.*?)无症状感染者.*?"
@@ -88,7 +88,7 @@ def parse_lines_to_json(lines):
     total = None
     districts = []
     regex_total = "市卫健委(.*?)通报：(.*?)(\\d+)年(\\d+)月(\\d+)日(.*?)新增本土新冠肺炎确诊病例(\\d+)(.*?)和无症状感染者(\\d+)例.*?"
-    regex_district = "(\\d+)年(\\d+)月(\\d+)日，(.*?)新增.*?"
+    regex_district = "^(\\d+年)?(\\d+)月(\\d+)日(.*?)，(.*?)新增.*?"
 
     pattern_total = re.compile(regex_total, re.IGNORECASE)
     pattern_district = re.compile(regex_district, re.IGNORECASE)
@@ -113,7 +113,7 @@ def parse_lines_to_json(lines):
 
         district_match = pattern_district.match(line)
         if district_match is not None:
-            (_, _, _, district_name) = district_match.groups()
+            (_, _, _, _, district_name) = district_match.groups()
             (confirmed, asymptomatic) = extract_cases(line)
             district_name_clean = district_name.replace(
                 "区无", "区").replace("无", "区").replace("区", "") + "区"
@@ -170,13 +170,13 @@ def generate_json_files(urls):
 
 
 if __name__ == "__main__":
-    # filename = "archived_html/02cf4fda20841f00c19651322c1d3711.html"
-    # total = parse_html_to_json(filename)
-    # ret = json.dumps(total, ensure_ascii=False,
-    #                  indent=4, separators=(',', ':'))
-    # with open(f"data/{total['date']}.json", 'w') as f:
-    #     f.write(ret)
-    # print(ret)
+    filename = "archived_html/000680e8edce1f4040793950391eb1ac.html"
+    total = parse_html_to_json(filename)
+    ret = json.dumps(total, ensure_ascii=False,
+                     indent=4, separators=(',', ':'))
+    with open(f"data/{total['date']}.json", 'w') as f:
+        f.write(ret)
+    print(ret)
 
     # urls = get_urls_crawled()
     # generate_json_files(urls)
@@ -188,7 +188,9 @@ if __name__ == "__main__":
           "2022年4月10日，崇明区无新增本土确诊病例，新增55例新冠肺炎无症状感染者，分别居住于：",
           "2022年3月30日，松江区新增8例确诊病例、238例本土无症状感染者，分别居住于：",
           "2022年3月21日，黄浦区无新增本土确诊病例、49例本土无症状感染者，分别居住于：",
-          "3月21日，嘉定区新增5例本土确诊病例、98例无症状感染者，分别居住于"
+          "3月21日，嘉定区新增5例本土确诊病例、98例无症状感染者，分别居住于",
+          "2022年3月21日，金山区新增1例本土确诊病例、15例本土无症状感染者。",
+          "2022年3月21日（0-24时），普陀区新增1例本土确诊病例、30例本土无症状感染者，分别居住于："
           ]
 
     for s in ss:
