@@ -17,8 +17,8 @@ if __name__ == '__main__':
     save_urls_crawled(urls)
 
     # Parse htmls to json
-    generate_json_files(urls)
-    generate_overview_json_files(urls)
+    generate_json_files(urls[0:len_urls])
+    generate_overview_json_files(urls[0:len_urls])
 
     # Gernerate figtures and documents
     generate_figtures()
