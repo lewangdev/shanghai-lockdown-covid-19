@@ -73,8 +73,12 @@ def geocode_geo(district_code, address):
 def generate_places(cases=[]):
     geo_cached = get_geo_cached()
     places = get_places()
+    places_by_date = {}
     for case in cases:
         date = case["date"]
+        place_by_date = places_by_date.get(date, [])
+        places_by_date[date] = place_by_date
+
         districts = case["districts"]
         for district in districts:
             district_name = district["district_name"]
@@ -90,12 +94,16 @@ def generate_places(cases=[]):
                     if ret:
                         geo_cached[place_name] = dict(lng=lng, lat=lat)
                 place = dict(date=date, district_name=district_name,
-                             place_name=place_name, lng=lng, lat=lat)
+                             place_name=place_name, lnglat=[float(lng), float(lat)])
                 places.append(place)
+                place_by_date.append(place)
                 print(place)
 
     save_geo_cached(geo_cached)
     save_places(places)
+    for date, place_by_date in places_by_date.items():
+        write_file(json.dumps(place_by_date, ensure_ascii=False,
+                   indent=4, separators=(',', ':')), f"data/place/{date}.json")
 
 
 if __name__ == "__main__":
