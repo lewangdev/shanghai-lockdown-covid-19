@@ -538,8 +538,8 @@
         {
             "district_name":"金山区",
             "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "asymptomatic":4,
+            "total":4,
             "places":[
                 "清泉路79号",
                 "金光村"

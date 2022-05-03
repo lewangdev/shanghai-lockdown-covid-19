@@ -6422,8 +6422,8 @@
         {
             "district_name":"崇明区",
             "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "asymptomatic":55,
+            "total":55,
             "places":[
                 "江南大道",
                 "长凯路253号",

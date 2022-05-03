@@ -1967,9 +1967,9 @@
         },
         {
             "district_name":"松江区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":15,
+            "asymptomatic":214,
+            "total":229,
             "places":[
                 "北松公路5208号",
                 "仓丰路855弄",

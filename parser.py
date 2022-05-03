@@ -34,7 +34,7 @@ def extract_cases(line: str):
         (_, _, _, _, confirmed, _, _, asymptomatic, _) = m1.groups()
         return (int(confirmed), int(asymptomatic))
 
-    regex2 = "(\\d+)年(\\d+)月(\\d+)日，(.*?)新增(\\d+)例本土无症状感染者.*?"
+    regex2 = "(\\d+)年(\\d+)月(\\d+)日，(.*?)新增(\\d+)[例]{0,1}本土无症状感染者.*?"
     m2 = re.match(regex2, line, re.IGNORECASE)
     if m2 is not None:
         (_, _, _, _, asymptomatic) = m2.groups()
@@ -46,10 +46,22 @@ def extract_cases(line: str):
         (_, _, _, _, _, confirmed, _, asymptomatic) = m3.groups()
         return (int(confirmed), int(asymptomatic))
 
-    regex4 = "(\\d+)年(\\d+)月(\\d+)日，(.*?)新增(\\d+)例本土(.*?)确诊病例(、|，|和)(\\d+)例(.*?)无症状感染者.*?"
+    regex4 = "(\\d+)年(\\d+)月(\\d+)日，(.*?)新增(\\d+)例(.*?)确诊病例(、|，|和)(\\d+)例(.*?)无症状感染者.*?"
     m4 = re.match(regex4, line, re.IGNORECASE)
     if m4 is not None:
         (_, _, _, _, confirmed, _, _, asymptomatic, _) = m4.groups()
+        return (int(confirmed), int(asymptomatic))
+
+    regex5 = "(\\d+)年(\\d+)月(\\d+)日，(.*?)无新增(.*?)本土(.*?)确诊病例(、|，|和)(.*?)(\\d+)例(.*?)无症状感染者.*?"
+    m5 = re.match(regex5, line, re.IGNORECASE)
+    if m5 is not None:
+        (_, _, _, _, _, _, _, _, asymptomatic, _) = m5.groups()
+        return (0, int(asymptomatic))
+
+    regex6 = "(\\d+)月(\\d+)日，(.*?)新增(\\d+)例(.*?)确诊病例(、|，|和)(.*?)(\\d+)例(.*?)无症状感染者.*?"
+    m6 = re.match(regex6, line, re.IGNORECASE)
+    if m6 is not None:
+        (_, _, _, confirmed, _, _, _, asymptomatic, _) = m6.groups()
         return (int(confirmed), int(asymptomatic))
 
     return 0, 0
@@ -158,7 +170,7 @@ def generate_json_files(urls):
 
 
 if __name__ == "__main__":
-    # filename = "archived_html/e57f746f6f2e8fc07c3d621d73d17fd1.html"
+    # filename = "archived_html/02cf4fda20841f00c19651322c1d3711.html"
     # total = parse_html_to_json(filename)
     # ret = json.dumps(total, ensure_ascii=False,
     #                  indent=4, separators=(',', ':'))
@@ -170,7 +182,14 @@ if __name__ == "__main__":
     # generate_json_files(urls)
 
     ss = ["2022年4月26日，崇明区新增14例新冠肺炎本土确诊病例，其中12例居住于闭环管理的建筑工地；新增453例无症状感染者，其中447例居住于闭环管理的建筑工地。其余分别居住于：",
-          "2022年4月26日，奉贤区新增2例本土新冠病例，新增11例本土无症状感染者。上述病例均在隔离管控中发现，分别居住于："]
+          "2022年4月26日，奉贤区新增2例本土新冠病例，新增11例本土无症状感染者。上述病例均在隔离管控中发现，分别居住于：",
+          "2022年4月23日，金山区新增44本土无症状感染者，其中部分病例之前已落实管控，其余居住于：",
+          "2022年4月17日，崇明区新增9例新冠肺炎本土确诊病例、43例本土无症状感染者。除4例途经崇明人员（高速）外，其余病例之前均已落实管控并对居住场所采取封控措施，同时已落实终末消毒等措施。",
+          "2022年4月10日，崇明区无新增本土确诊病例，新增55例新冠肺炎无症状感染者，分别居住于：",
+          "2022年3月30日，松江区新增8例确诊病例、238例本土无症状感染者，分别居住于：",
+          "2022年3月21日，黄浦区无新增本土确诊病例、49例本土无症状感染者，分别居住于：",
+          "3月21日，嘉定区新增5例本土确诊病例、98例无症状感染者，分别居住于"
+          ]
 
     for s in ss:
         print(s)

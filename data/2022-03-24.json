@@ -649,8 +649,8 @@
         {
             "district_name":"金山区",
             "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "asymptomatic":12,
+            "total":12,
             "places":[
                 "金光村",
                 "康德路358弄",

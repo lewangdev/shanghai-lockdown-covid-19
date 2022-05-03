@@ -469,14 +469,14 @@
             ]
         },
         {
-            "district_name":"虹口区",
+            "district_name":"崇明区",
             "confirmed":0,
             "asymptomatic":0,
             "total":0,
             "places":[]
         },
         {
-            "district_name":"嘉定区",
+            "district_name":"虹口区",
             "confirmed":0,
             "asymptomatic":0,
             "total":0,
@@ -490,7 +490,7 @@
             "places":[]
         },
         {
-            "district_name":"崇明区",
+            "district_name":"嘉定区",
             "confirmed":0,
             "asymptomatic":0,
             "total":0,

@@ -122,8 +122,8 @@
         {
             "district_name":"黄浦区",
             "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "asymptomatic":49,
+            "total":49,
             "places":[
                 "永年路24弄",
                 "建德路1号",
@@ -433,9 +433,9 @@
         },
         {
             "district_name":"松江区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":1,
+            "asymptomatic":38,
+            "total":39,
             "places":[
                 "庄家村",
                 "广富林路600弄",
@@ -496,14 +496,14 @@
             ]
         },
         {
-            "district_name":"虹口区",
+            "district_name":"崇明区",
             "confirmed":0,
             "asymptomatic":0,
             "total":0,
             "places":[]
         },
         {
-            "district_name":"嘉定区",
+            "district_name":"虹口区",
             "confirmed":0,
             "asymptomatic":0,
             "total":0,
@@ -517,7 +517,7 @@
             "places":[]
         },
         {
-            "district_name":"崇明区",
+            "district_name":"嘉定区",
             "confirmed":0,
             "asymptomatic":0,
             "total":0,

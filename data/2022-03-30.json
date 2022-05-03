@@ -2029,9 +2029,9 @@
         },
         {
             "district_name":"松江区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":8,
+            "asymptomatic":238,
+            "total":246,
             "places":[
                 "伴亭路855弄",
                 "北松公路5187号",

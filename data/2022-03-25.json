@@ -902,8 +902,8 @@
         {
             "district_name":"金山区",
             "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "asymptomatic":1,
+            "total":1,
             "places":[
                 "新巷村"
             ]

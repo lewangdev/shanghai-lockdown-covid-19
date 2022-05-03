@@ -4901,8 +4901,8 @@
         {
             "district_name":"金山区",
             "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "asymptomatic":44,
+            "total":44,
             "places":[
                 "浦卫公路10359号",
                 "荣东路800号",

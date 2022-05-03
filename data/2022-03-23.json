@@ -535,8 +535,8 @@
         {
             "district_name":"金山区",
             "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "asymptomatic":5,
+            "total":5,
             "places":[
                 "清泉路79号",
                 "金磐路18号"
