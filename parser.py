@@ -152,6 +152,7 @@ def parse_html_to_json(filename: str):
 def generate_json_files(urls):
     regex = "(.*?)月(\\d+)日（(.*?)时）本市各区确诊病例、无症状感染者居住地信息.*?"
     pattern = re.compile(regex, re.IGNORECASE)
+    json_filenames = []
     for url in urls:
         text = url['text']
         m = pattern.match(text)
@@ -164,9 +165,11 @@ def generate_json_files(urls):
         total = parse_html_to_json(filename)
         ret = json.dumps(total, ensure_ascii=False, indent=4,
                          separators=(',', ':'))
-
-        with open(f"data/{total['date']}.json", 'w') as f:
+        json_filename = f"{total['date']}.json"
+        with open(f"data/{json_filename}", 'w') as f:
             f.write(ret)
+        json_filenames.append(json_filename)
+    return json_filenames
 
 
 if __name__ == "__main__":

@@ -27,18 +27,6 @@ places_filename = "data/place/places.json"
 key = os.environ.get("AMAP_KEY")
 
 
-def get_places():
-    # if os.path.exists(places_filename):
-    #     return json.loads(read_file(places_filename))
-
-    return []
-
-
-def save_places(places):
-    write_file(json.dumps(places, ensure_ascii=False, indent=4,
-               separators=(',', ':')), places_filename)
-
-
 def get_geo_cached():
     if os.path.exists(geo_cached_filename):
         return json.loads(read_file(geo_cached_filename))
@@ -76,7 +64,6 @@ def generate_places(cases=[]):
         return
 
     geo_cached = get_geo_cached()
-    places = get_places()
     places_by_date = {}
     for case in cases:
         date = case["date"]
@@ -99,12 +86,10 @@ def generate_places(cases=[]):
                         geo_cached[place_name] = dict(lng=lng, lat=lat)
                 place = dict(date=date, district_name=district_name,
                              place_name=place_name, lnglat=[float(lng), float(lat)])
-                places.append(place)
                 place_by_date.append(place)
                 print(place)
 
     save_geo_cached(geo_cached)
-    save_places(places)
     for date, place_by_date in places_by_date.items():
         write_file(json.dumps(place_by_date, ensure_ascii=False,
                    indent=4, separators=(',', ':')), f"data/place/{date}.json")

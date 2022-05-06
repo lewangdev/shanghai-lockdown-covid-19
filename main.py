@@ -19,15 +19,15 @@ if __name__ == '__main__':
     save_urls_crawled(urls)
 
     # Parse htmls to json
-    # generate_json_files(urls[0:len_urls])
-    # generate_overview_json_files(urls[0:len_urls])
-    generate_json_files(urls)
-    generate_overview_json_files(urls)
+    json_filenames = generate_json_files(urls[0:len_urls])
+    generate_overview_json_files(urls[0:len_urls])
+    # generate_json_files(urls)
+    # generate_overview_json_files(urls)
 
     # Gernerate figtures and documents
     generate_figtures()
     generate_readme_file()
 
     # Generate places
-    cases = get_data()
+    cases = get_data(json_filenames)
     generate_places(cases)

@@ -12,9 +12,10 @@ def read_file(filename):
         return f.read()
 
 
-def get_data():
+def get_data(filenames=None):
     new_cases = []
-    filenames = filter(lambda x: x.endswith("json"), os.listdir("./data"))
+    if filenames is None:
+        filenames = filter(lambda x: x.endswith("json"), os.listdir("./data"))
     sorted_filenames = sorted(filenames)
     for filename in sorted_filenames:
         case_by_date = json.loads(open(f"./data/{filename}").read())
