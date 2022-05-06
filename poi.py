@@ -71,6 +71,10 @@ def geocode_geo(district_code, address):
 
 
 def generate_places(cases=[]):
+    if key is None:
+        print("AMAP_KEY is not set, please create a web api key at https://lbs.amap.com/ and set it in the environment variable")
+        return
+
     geo_cached = get_geo_cached()
     places = get_places()
     places_by_date = {}

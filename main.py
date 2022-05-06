@@ -3,6 +3,8 @@ from parser import generate_json_files
 from overview_parser import generate_overview_json_files
 from figture import generate_figtures
 from readme import generate_readme_file
+from util import get_data
+from poi import generate_places
 
 
 if __name__ == '__main__':
@@ -25,3 +27,7 @@ if __name__ == '__main__':
     # Gernerate figtures and documents
     generate_figtures()
     generate_readme_file()
+
+    # Generate places
+    cases = get_data()
+    generate_places(cases)
