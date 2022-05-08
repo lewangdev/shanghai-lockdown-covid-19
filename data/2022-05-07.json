@@ -554,9 +554,9 @@
         },
         {
             "district_name":"静安区",
-            "confirmed":0,
-            "asymptomatic":0,
-            "total":0,
+            "confirmed":19,
+            "asymptomatic":529,
+            "total":548,
             "places":[
                 "安远路501弄",
                 "宝昌路550弄",
