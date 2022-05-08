@@ -2,7 +2,7 @@
 
 No entire COVID-19 statistics data of the Shanghai lockdown period can be found in the [JHU CSSE COVID-19 Data](https://github.com/CSSEGISandData/COVID-19) project. Data of project [shanghai-lockdown-covid-19](https://github.com/lewangdev/shanghai-lockdown-covid-19) is crawled from [Shanghai Government](https://wsjkw.sh.gov.cn/yqtb/)'s public website, began on 19/03/2022, the date of my place lockdown.
 
-Shanghai is divided by the Huangpu River into two parts, the Pudong area, and the Puxi area. Pudong's lockdown began on 28/03/2022 firstly, and Puxi started its shutdown on 01/04/2022. Most areas of Shanghai remain locked down till 08/05/2022. 
+Shanghai is divided by the Huangpu River into two parts, the Pudong area, and the Puxi area. Pudong's lockdown began on 28/03/2022 firstly, and Puxi started its shutdown on 01/04/2022. Most areas of Shanghai remain locked down till 09/05/2022. 
 
 This project will be updated every day before Shanghai reopens. JSON files with places can be found in directory [data](https://github.com/lewangdev/shanghai-lockdown-covid-19/tree/main/data).
 
@@ -12,7 +12,7 @@ This project will be updated every day before Shanghai reopens. JSON files with 
 
 ![New cases](https://github.com/lewangdev/shanghai-lockdown-covid-19/blob/main/figture/new-cases.png?raw=true)
 
-| Date/Details | New Cases  | Deaths | Confirmed Cases | Asymptomatic Cases | A2C Cases(*) |
+| Date/Details | New Cases(*)  | Deaths | Confirmed Cases | Asymptomatic Cases | A2C Cases(*) |
 | ---- | ---------- | ---------- | ---------------- | ----------------- | ---------------------------- |
 | 2022-05-07 | 3840 | 8 | 215 | 3760 | 135 |
 | 2022-05-06 | 4039 | 13 | 253 | 3961 | 175 |
@@ -65,13 +65,14 @@ This project will be updated every day before Shanghai reopens. JSON files with 
 | 2022-03-20 | 758 | 0 | 24 | 734 | 0 |
 | 2022-03-19 | 503 | 0 | 17 | 492 | 6 |
 
-* A2C Cases: Asymptomatic cases that are confirmed.
+* New Cases = Confirmed Cases + Asymptomatic Cases - A2C Cases
+* A2C Cases: Asymptomatic cases that are confirmed
 
 ### Cases
 
 ![Cases](https://github.com/lewangdev/shanghai-lockdown-covid-19/blob/main/figture/cases.png?raw=true)
 
-| Date | Total Cases  | Total Deaths | Case‑Fatality |
+| Date | Total Cases  | Total Deaths | Case‑Fatality-Rate |
 | ---- | ---------- | ---------- | ---------- |
 | 2022-05-07 | 603460 | 511 | 0.0847% |
 | 2022-05-06 | 599620 | 503 | 0.0839% |
