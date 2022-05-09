@@ -28,17 +28,11 @@ def parse_html_to_lines(filename: str):
 
 
 def extract_cases(line: str):
-    regex1 = "(\\d+)年(\\d+)月(\\d+)日，(.*?)新增(\\d+)例(.*?)病例(.*?)新增(\\d+)例(.*?)无症状感染者.*?"
+    regex1 = "(\\d+)年(\\d+)月(\\d+)日，(.*?)新增(\\d+)例(.*?)病例(.*?)新增(\\d+)[例]{0,1}(.*?)无症状感染者.*?"
     m1 = re.match(regex1, line, re.IGNORECASE)
     if m1 is not None:
         (_, _, _, _, confirmed, _, _, asymptomatic, _) = m1.groups()
         return (int(confirmed), int(asymptomatic))
-
-    regex2 = "(\\d+)年(\\d+)月(\\d+)日，(.*?)新增(\\d+)[例]{0,1}本土无症状感染者.*?"
-    m2 = re.match(regex2, line, re.IGNORECASE)
-    if m2 is not None:
-        (_, _, _, _, asymptomatic) = m2.groups()
-        return (0, int(asymptomatic))
 
     regex3 = "(\\d+)年(\\d+)月(\\d+)日，(.*?)新增本土(.*?)确诊病例(\\d+)例(.*?)新增(本土)?无症状感染者(\\d+)例.*?"
     m3 = re.match(regex3, line, re.IGNORECASE)
@@ -63,6 +57,12 @@ def extract_cases(line: str):
     if m6 is not None:
         (_, _, _, confirmed, _, _, _, asymptomatic, _) = m6.groups()
         return (int(confirmed), int(asymptomatic))
+
+    regex2 = "(\\d+)年(\\d+)月(\\d+)日，(.*?)新增(\\d+)[例]{0,1}本土无症状感染者.*?"
+    m2 = re.match(regex2, line, re.IGNORECASE)
+    if m2 is not None:
+        (_, _, _, _, asymptomatic) = m2.groups()
+        return (0, int(asymptomatic))
 
     return 0, 0
 
@@ -173,7 +173,7 @@ def generate_json_files(urls):
 
 
 if __name__ == "__main__":
-    filename = "archived_html/000680e8edce1f4040793950391eb1ac.html"
+    filename = "archived_html/2b427aa02008f3fe34bcb92cfe0be981.html"
     total = parse_html_to_json(filename)
     ret = json.dumps(total, ensure_ascii=False,
                      indent=4, separators=(',', ':'))
@@ -195,6 +195,7 @@ if __name__ == "__main__":
           "2022年3月21日，金山区新增1例本土确诊病例、15例本土无症状感染者。",
           "2022年3月21日（0-24时），普陀区新增1例本土确诊病例、30例本土无症状感染者，分别居住于：",
           "2022年5月7日，静安区新增本土确诊病例19例，新增无症状感染者529例，分别居住于："
+          "2022年5月8日，浦东新区新增34例本土确诊病例，新增658本土无症状感染者，分别居住于："
           ]
 
     for s in ss:
