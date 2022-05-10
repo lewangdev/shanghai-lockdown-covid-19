@@ -67,11 +67,11 @@ def extract_a2c(line: str):
 
 
 def extract_deaths(line: str):
-    regex_deaths = "(.*?)新增本土死亡(\\d+)例.*?"
+    regex_deaths = "(.*?)新增本土死亡(病例)?(\\d+)例.*?"
     deaths = 0
     deaths_match = re.match(regex_deaths, line, re.IGNORECASE)
     if deaths_match is not None:
-        (_, deaths) = deaths_match.groups()
+        (_, _, deaths) = deaths_match.groups()
         return True, int(deaths)
 
     return False, 0
@@ -136,16 +136,18 @@ def generate_overview_json_files(urls):
             f.write(ret)
 
 
-def test_parse_html():
-    filename = "archived_html/221e6e50a84c1a9700e3caedc8982440.html"
+def parse_single_html():
+    filename = "archived_html/d47516e5c35b69472210c0b1617156f9.html"
     total = parse_html_to_json(filename)
     ret = json.dumps(total, ensure_ascii=False,
                      indent=4, separators=(',', ':'))
     print(ret)
+    with open(f"data/overview/{total['date']}.json", 'w') as f:
+        f.write(ret)
 
 
 if __name__ == "__main__":
-    # test_parse_html()
+    parse_single_html()
 
-    urls = get_urls_crawled()
-    generate_overview_json_files(urls)
+    # urls = get_urls_crawled()
+    # generate_overview_json_files(urls)
