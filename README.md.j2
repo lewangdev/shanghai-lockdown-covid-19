@@ -13,7 +13,7 @@ Data files can be found in directory [data](https://github.com/lewangdev/shangha
 
 ## Update Frequency
 
-This project will be updated every day(every 15min between 8am and 10pm GMT+8) before Shanghai reopens. 
+This project will be updated every 15min between 8am and 10pm GMT+8 before Shanghai reopens. 
 
 ## Statistics
 
