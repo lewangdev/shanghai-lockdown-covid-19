@@ -5,6 +5,7 @@ from figture import generate_figtures
 from readme import generate_readme_file
 from util import get_data
 from poi import generate_places
+from db import create_db_files
 
 
 if __name__ == '__main__':
@@ -31,3 +32,6 @@ if __name__ == '__main__':
     # Generate places
     cases = get_data(json_filenames)
     generate_places(cases)
+
+    # Create db files
+    create_db_files()
