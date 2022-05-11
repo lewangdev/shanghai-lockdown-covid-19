@@ -32,7 +32,7 @@ def save_urls_crawled(urls):
 def crawl(pages, urls_crawled):
     urls = []
     for p in pages:
-        url = f"https://wsjkw.sh.gov.cn/yqtb/index{p}.html"
+        url = f"https://wsjkw.sh.gov.cn/yqtb/" if p == '' else f"https://wsjkw.sh.gov.cn/yqtb/index{p}.html"
 
         html_content = get_html_content(url)
         soup = BeautifulSoup(html_content, 'html.parser')
