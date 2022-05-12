@@ -33,5 +33,6 @@ if __name__ == '__main__':
     cases = get_data(json_filenames)
     generate_places(cases)
 
-    # Create db files
-    create_db_files()
+    # Create db files when new urls crawled
+    if len_urls > 0:
+        create_db_files()
