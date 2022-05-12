@@ -2,7 +2,7 @@
 
 No entire COVID-19 statistics data of the Shanghai lockdown period can be found in the [JHU CSSE COVID-19 Data](https://github.com/CSSEGISandData/COVID-19) project. Data of project [shanghai-lockdown-covid-19](https://github.com/lewangdev/shanghai-lockdown-covid-19) is crawled from [Shanghai Government](https://wsjkw.sh.gov.cn/yqtb/)'s public website, began on 19/03/2022, the date of my place lockdown.
 
-Shanghai is divided by the Huangpu River into two parts, the Pudong area, and the Puxi area. Pudong's lockdown began on 28/03/2022 firstly, and Puxi started its shutdown on 01/04/2022. Most areas of Shanghai remain locked down till 11/05/2022. 
+Shanghai is divided by the Huangpu River into two parts, the Pudong area, and the Puxi area. Pudong's lockdown began on 28/03/2022 firstly, and Puxi started its shutdown on 01/04/2022. Most areas of Shanghai remain locked down till 12/05/2022. 
 
 Data files can be found in directory [data](https://github.com/lewangdev/shanghai-lockdown-covid-19/tree/main/data), including:
 
@@ -23,6 +23,7 @@ This project will be updated every 15min between 8am and 10pm GMT+8 before Shang
 
 | Date/Details | New Cases(*)  | Deaths | Confirmed Cases | Asymptomatic Cases | A2C Cases(*) |
 | ---- | ---------- | ---------- | ---------------- | ----------------- | ---------------------------- |
+| 2022-05-11 | 1343 | 5 | 144 | 1305 | 106 |
 | 2022-05-10 | 1289 | 7 | 228 | 1259 | 198 |
 | 2022-05-09 | 2858 | 6 | 234 | 2780 | 156 |
 | 2022-05-08 | 3717 | 11 | 322 | 3625 | 230 |
@@ -86,6 +87,7 @@ This project will be updated every 15min between 8am and 10pm GMT+8 before Shang
 
 | Date | Total Cases  | Total Deaths | Case‑Fatality-Rate |
 | ---- | ---------- | ---------- | ---------- |
+| 2022-05-11 | 612667 | 540 | 0.0881% |
 | 2022-05-10 | 611324 | 535 | 0.0875% |
 | 2022-05-09 | 610035 | 528 | 0.0866% |
 | 2022-05-08 | 607177 | 522 | 0.0860% |
