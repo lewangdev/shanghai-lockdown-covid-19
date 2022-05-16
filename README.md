@@ -23,6 +23,7 @@ This project will be updated every 15min between 8am and 10pm GMT+8 before Shang
 
 | Date/Details | New Cases(*)  | Deaths | Confirmed Cases | Asymptomatic Cases | A2C Cases(*) |
 | ---- | ---------- | ---------- | ---------------- | ----------------- | ---------------------------- |
+| 2022-05-15 | 896 | 4 | 69 | 869 | 42 |
 | 2022-05-14 | 1258 | 3 | 166 | 1203 | 111 |
 | 2022-05-13 | 1541 | 1 | 194 | 1487 | 140 |
 | 2022-05-12 | 1929 | 2 | 227 | 1869 | 167 |
@@ -90,6 +91,7 @@ This project will be updated every 15min between 8am and 10pm GMT+8 before Shang
 
 | Date | Total Cases  | Total Deaths | Case‑Fatality-Rate |
 | ---- | ---------- | ---------- | ---------- |
+| 2022-05-15 | 618291 | 575 | 0.0930% |
 | 2022-05-14 | 617395 | 571 | 0.0925% |
 | 2022-05-13 | 616137 | 568 | 0.0922% |
 | 2022-05-12 | 614596 | 567 | 0.0923% |
