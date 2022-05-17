@@ -8,7 +8,7 @@ Shanghai is divided by the Huangpu River into two parts, the Pudong area, and th
 
 ![](https://raw.githubusercontent.com/lewangdev/picb0/main/shanghai-in-lockdown-as-cases-surge.jpg)
 
-* Shanghai Government has announced its city-wide lockdowns will be gradually lifted from 1 June on 16/05/2022, after 15 out of 16 districts achieving "social dynamic Zero-Covid cases". My place alse reopened on the same day, but with some limits.*
+__Shanghai Government has announced its city-wide lockdowns will be gradually lifted from 1 June on 16/05/2022, after 15 out of 16 districts achieving "social dynamic Zero-Covid cases". My place alse reopened on the same day, but with some limits.__
 
 Data files can be found in directory [data](https://github.com/lewangdev/shanghai-lockdown-covid-19/tree/main/data), including:
 
@@ -19,7 +19,7 @@ Data files can be found in directory [data](https://github.com/lewangdev/shangha
 
 ## Update Frequency
 
-This project will be updated every 15min between 8am and 10pm GMT+8. 
+This project will be updated **every 15min between 8am and 10pm GMT+8**. 
 
 ## Statistics
 
