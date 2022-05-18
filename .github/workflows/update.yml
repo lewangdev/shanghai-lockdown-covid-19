@@ -1,10 +1,7 @@
 name: Update Data
 on:
-  push:
-    branches: 
-      - main
-schedule:
-    - cron: '10 23 * * *'
+  schedule:
+    - cron: '*/30 0-14 * * *'
 jobs:
   update:
     runs-on: ubuntu-latest
