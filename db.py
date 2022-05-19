@@ -66,8 +66,11 @@ def write_excel(filename: str, sheets: list, recreate=True):
 
 
 def create_db_files():
-    data_location = "./data/db"
-    database = SqliteDatabase(os.path.join(data_location, "covid19-shanghai-lockdown.db"), pragmas={
+    db_location = "./data/db/covid19-shanghai-lockdown.db"
+    if os.path.exists(db_location):
+        os.remove(db_location)
+
+    database = SqliteDatabase(db_location, pragmas={
         'journal_mode': 'wal',
         'cache_size': -1 * 8000,
         'foreign_keys': 1,
@@ -76,9 +79,9 @@ def create_db_files():
     database_proxy.initialize(database)
     database.create_tables(
         [Overview, DisctrictOverview, Place], safe=True)
-    Overview.truncate_table()
-    DisctrictOverview.truncate_table()
-    Place.truncate_table()
+    # Overview.truncate_table()
+    # DisctrictOverview.truncate_table()
+    # Place.truncate_table()
 
     sheets = []
 
