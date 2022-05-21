@@ -15,7 +15,7 @@ Data files can be found in directory [data](https://github.com/lewangdev/shangha
 * Excel
 * Sqlite
 
-**Notice**: I think db files is too large, and they will to make this repo hard to clone. If you want to get the latest db files, uncomment the line in [db.py](https://github.com/lewangdev/shanghai-lockdown-covid-19/blob/main/db.py) and run the file to generate all db files.
+**Notice**: I think db files are too large, and they will to make this repo hard to clone. If you want to get the latest db files, uncomment the line in [db.py](https://github.com/lewangdev/shanghai-lockdown-covid-19/blob/main/db.py) and run the file to generate all db files.
 
 ## Update Frequency
 
