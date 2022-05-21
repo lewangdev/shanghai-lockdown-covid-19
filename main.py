@@ -34,5 +34,5 @@ if __name__ == '__main__':
     generate_places(cases)
 
     # Create db files when new urls crawled
-    if len_urls > 0:
-        create_db_files()
+    # if len_urls > 0:
+    #    create_db_files()
