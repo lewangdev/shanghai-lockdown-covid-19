@@ -27,6 +27,7 @@ This project will be updated **every 15min between 8am and 10pm GMT+8** by [GitH
 
 | Date/Details | New Cases(*)  | Deaths | Confirmed Cases | Asymptomatic Cases | A2C Cases(*) |
 | ---- | ---------- | ---------- | ---------------- | ----------------- | ---------------------------- |
+| 2022-05-20 | 819 | 1 | 84 | 784 | 49 |
 | 2022-05-18 | 671 | 1 | 82 | 637 | 48 |
 | 2022-05-17 | 799 | 3 | 96 | 759 | 56 |
 | 2022-05-16 | 777 | 1 | 77 | 746 | 46 |
@@ -98,6 +99,7 @@ This project will be updated **every 15min between 8am and 10pm GMT+8** by [GitH
 
 | Date | Total Cases  | Total Deaths | Case‑Fatality-Rate |
 | ---- | ---------- | ---------- | ---------- |
+| 2022-05-20 | 621357 | 581 | 0.0935% |
 | 2022-05-18 | 620538 | 580 | 0.0935% |
 | 2022-05-17 | 619867 | 579 | 0.0934% |
 | 2022-05-16 | 619068 | 576 | 0.0930% |
