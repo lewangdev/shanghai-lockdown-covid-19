@@ -131,4 +131,8 @@ def create_db_files():
 
 
 if __name__ == "__main__":
-    create_db_files()
+    # If you want to get the latest db files,
+    # uncomment the underline and run this file
+    #
+    # create_db_files()
+    pass

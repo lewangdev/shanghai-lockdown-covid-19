@@ -15,9 +15,17 @@ Data files can be found in directory [data](https://github.com/lewangdev/shangha
 * Excel
 * Sqlite
 
+**Notice**: I think db files is too large to make this repo hard to clone. If you want to get the latest db files, uncomment the line in [db.py](https://github.com/lewangdev/shanghai-lockdown-covid-19/blob/main/db.py) and run the file to generate all db files.
+
 ## Update Frequency
 
 This project will be updated **every 15min between 8am and 10pm GMT+8** by [GitHub Actions](https://github.com/lewangdev/shanghai-lockdown-covid-19/actions/workflows/update.yml). 
+
+## Get The Code and Run on Your Machine
+
+```sh
+git clone --depeth=1 https://github.com/lewangdev/shanghai-lockdown-covid-19.git
+```
 
 ## Statistics
 
@@ -28,6 +36,7 @@ This project will be updated **every 15min between 8am and 10pm GMT+8** by [GitH
 | Date/Details | New Cases(*)  | Deaths | Confirmed Cases | Asymptomatic Cases | A2C Cases(*) |
 | ---- | ---------- | ---------- | ---------------- | ----------------- | ---------------------------- |
 | 2022-05-20 | 819 | 1 | 84 | 784 | 49 |
+| 2022-05-19 | 787 | 0 | 88 | 770 | 71 |
 | 2022-05-18 | 671 | 1 | 82 | 637 | 48 |
 | 2022-05-17 | 799 | 3 | 96 | 759 | 56 |
 | 2022-05-16 | 777 | 1 | 77 | 746 | 46 |
@@ -99,7 +108,8 @@ This project will be updated **every 15min between 8am and 10pm GMT+8** by [GitH
 
 | Date | Total Cases  | Total Deaths | Case‑Fatality-Rate |
 | ---- | ---------- | ---------- | ---------- |
-| 2022-05-20 | 621357 | 581 | 0.0935% |
+| 2022-05-20 | 622144 | 581 | 0.0934% |
+| 2022-05-19 | 621325 | 580 | 0.0933% |
 | 2022-05-18 | 620538 | 580 | 0.0935% |
 | 2022-05-17 | 619867 | 579 | 0.0934% |
 | 2022-05-16 | 619068 | 576 | 0.0930% |

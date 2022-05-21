@@ -9,6 +9,7 @@ def parse_html_to_lines(filename: str):
         html_content = f.read()
     soup = BeautifulSoup(html_content, 'html.parser')
     span_elems = soup.select("#js_content p")
+    # span_elems = soup.select("#js_content span")
 
     if len(span_elems) == 0:
         span_elems = soup.select("#ivs_content p")
@@ -136,8 +137,7 @@ def generate_overview_json_files(urls):
             f.write(ret)
 
 
-def parse_single_html():
-    filename = "archived_html/5975577458075d816f8f66dec080991c.html"
+def parse_single_html(filename):
     total = parse_html_to_json(filename)
     ret = json.dumps(total, ensure_ascii=False,
                      indent=4, separators=(',', ':'))
@@ -147,7 +147,8 @@ def parse_single_html():
 
 
 if __name__ == "__main__":
-    parse_single_html()
+    filename = "archived_html/cd71a343ca286cd87d39c54e87144a56.html"
+    parse_single_html(filename)
 
     # urls = get_urls_crawled()
     # generate_overview_json_files(urls)
