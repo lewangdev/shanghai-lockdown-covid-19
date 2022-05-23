@@ -1,0 +1,8 @@
+{
+    "date":"2022-05-22",
+    "confirmed":55,
+    "asymptomatic":503,
+    "total":528,
+    "asymptomatic_to_confirmed":30,
+    "deaths":1
+}
