@@ -82,8 +82,8 @@ if __name__ == '__main__':
     # urls = crawl(pages, urls_crawled)
     # urls.extend(urls_crawled)
     # save_urls_crawled(urls)
-    url = "https://mp.weixin.qq.com/s/SBdPT7J_9WJq0Y4bp2SXIA"
-    text = "5月19日（0-24时）上海新增本土确诊病例88例、无症状感染者770例，出院出舱人数2478例"
+    url = "https://mp.weixin.qq.com/s/Zpll7k6wZfJiPNeV8sz6Ig"
+    text = "5月24日（0-24时）本市各区确诊病例、无症状感染者居住地信息"
     urls_crawled = get_urls_crawled()
     urls = crawl_url(url, text)
     urls.extend(urls_crawled)
