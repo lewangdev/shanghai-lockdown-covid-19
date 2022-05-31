@@ -35,6 +35,7 @@ git clone --depeth=1 https://github.com/lewangdev/shanghai-lockdown-covid-19.git
 
 | Date/Details | New Cases(*)  | Deaths | Confirmed Cases | Asymptomatic Cases | A2C Cases(*) |
 | ---- | ---------- | ---------- | ---------------- | ----------------- | ---------------------------- |
+| 2022-05-30 | 29 | 0 | 9 | 22 | 2 |
 | 2022-05-29 | 65 | 0 | 6 | 61 | 2 |
 | 2022-05-28 | 104 | 0 | 29 | 93 | 18 |
 | 2022-05-27 | 152 | 0 | 39 | 131 | 18 |
@@ -117,6 +118,7 @@ git clone --depeth=1 https://github.com/lewangdev/shanghai-lockdown-covid-19.git
 
 | Date | Total Cases  | Total Deaths | Case‑Fatality-Rate |
 | ---- | ---------- | ---------- | ---------- |
+| 2022-05-30 | 624949 | 588 | 0.0941% |
 | 2022-05-29 | 624920 | 588 | 0.0941% |
 | 2022-05-28 | 624855 | 588 | 0.0941% |
 | 2022-05-27 | 624751 | 588 | 0.0941% |
